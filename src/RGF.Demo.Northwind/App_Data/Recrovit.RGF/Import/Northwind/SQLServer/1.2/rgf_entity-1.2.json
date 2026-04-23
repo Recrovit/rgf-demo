@@ -1,0 +1,13 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10010,
+      "EntityName": "Order_Details",
+      "MigrRename": "RG_OrderDetails",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_OrderDetails, DefaultAssemblyName",
+      "EntityVersion": "1",
+      "Category": 2
+    }
+  ]
+}

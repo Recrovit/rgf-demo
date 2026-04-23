@@ -1,0 +1,74 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroDict_Str, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "Employee.Tooltip",
+      "StringId": "FirstName",
+      "Str_eng": "First Name",
+      "Str_hun": "Keresztnév"
+    },
+    {
+      "Scope": "Employee.Tooltip",
+      "StringId": "LastName",
+      "Str_eng": "Last Name",
+      "Str_hun": "Vezetéknév"
+    },
+    {
+      "Scope": "Entity.UI.Categories_1",
+      "StringId": "_EntityName",
+      "Str_eng": "Categories",
+      "Str_hun": "Kategóriák"
+    },
+    {
+      "Scope": "Entity.UI.Categories_1",
+      "StringId": "CategoryName",
+      "Str_eng": "Category Name",
+      "Str_hun": "Category Name"
+    },
+    {
+      "Scope": "Entity.UI.Categories_1",
+      "StringId": "Description",
+      "Str_eng": "Description"
+    },
+    {
+      "Scope": "Entity.UI.Categories_1",
+      "StringId": "Picture",
+      "Str_eng": "Picture"
+    },
+    {
+      "Scope": "Predefined.UserFilter",
+      "StringId": "RGO_PredefFilter_10001",
+      "Str_eng": "cat=beve"
+    },
+    {
+      "Scope": "RecroDictDemo",
+      "StringId": "A1",
+      "Str_eng": "<div><span style=\"color: rgb(204, 51, 51);\"><strong>Identity: {0}</strong></span></div>",
+      "Str_hun": "<div><span style=\"color: rgb(204, 51, 51);\"><strong>Azonosító: {0}</strong></span></div>"
+    },
+    {
+      "Scope": "RecroDictDemo",
+      "StringId": "A2",
+      "Str_eng": "<div><span style=\"color: rgb(204, 51, 51);\"><strong>RecroDict Form demo</strong></span></div>",
+      "Str_hun": "<div><span style=\"color: rgb(204, 51, 51);\"><strong>RecroDict Form demo</strong></span></div>"
+    },
+    {
+      "Scope": "DropdownRecroDict",
+      "StringId": "1",
+      "Str_eng": "RD-Item1",
+      "Str_hun": "RD-Item1"
+    },
+    {
+      "Scope": "DropdownRecroDict",
+      "StringId": "2",
+      "Str_eng": "RD-Item2",
+      "Str_hun": "RD-Item2"
+    },
+    {
+      "Scope": "DropdownRecroDict",
+      "StringId": "3",
+      "Str_eng": "RD-Item3",
+      "Str_hun": "RD-Item3"
+    }
+  ]
+}

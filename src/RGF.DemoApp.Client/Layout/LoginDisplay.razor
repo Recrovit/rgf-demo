@@ -1,0 +1,29 @@
+﻿
+<AuthorizeView Context="state">
+    <Authorized>
+        <span>Hello, @GetDisplayName(state.User)!</span>
+        <LogoutForm ReturnUrl="/" ButtonText="Log out" ButtonClass="@ButtonType" />
+    </Authorized>
+    <NotAuthorized>
+        <a class="@ButtonType" href="@LoginHref">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@inject IRecroSecService _recroSec
+@inject NavigationManager Navigation
+@code {
+
+    [Parameter]
+    public string ButtonType { get; set; } = "btn btn-link";
+
+    private string LoginHref => $"/authentication/login?returnUrl={Uri.EscapeDataString(GetReturnUrl())}";
+
+    private string GetReturnUrl()
+    {
+        var relativePath = Navigation.ToBaseRelativePath(Navigation.Uri);
+        return string.IsNullOrWhiteSpace(relativePath) ? "/rgf" : $"/{relativePath}";
+    }
+
+    private string? GetDisplayName(System.Security.Claims.ClaimsPrincipal user)
+        => _recroSec.UserName ?? user.Identity?.Name;
+}

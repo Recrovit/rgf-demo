@@ -1,0 +1,13 @@
+/*order_details_1 => Order_Details (v1)*/
+div.rg-details.order_details_1 { width: 508px; }
+div.rg-details.order_details_1 div.ui-dialog-content div.rg-tabs { height: 239px; }
+/*rg-col-10050 => OrderID:*/
+.order_details_1 div.rg-entity[name="rg-col-10050"] > div.rg-property[name="rg-col-10050"] .rg-label { text-align: center; min-width: 80px; }
+/*rg-col-10053 => ProductID:*/
+.order_details_1 div.rg-entity[name="rg-col-10053"] > div.rg-property[name="rg-col-10053"] .rg-label { text-align: center; min-width: 80px; }
+/*rg-col-10056 => UnitPrice:*/
+.order_details_1 div.rg-property[name="rg-col-10056"] .rg-label { text-align: center; min-width: 80px; }
+/*rg-col-10054 => Quantity:*/
+.order_details_1 div.rg-property[name="rg-col-10054"] .rg-label { text-align: center; min-width: 80px; }
+/*rg-col-10048 => Discount:*/
+.order_details_1 div.rg-property[name="rg-col-10048"] .rg-label { text-align: center; min-width: 80px; }

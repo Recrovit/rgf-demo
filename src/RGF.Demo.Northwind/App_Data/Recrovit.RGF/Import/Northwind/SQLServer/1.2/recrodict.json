@@ -1,0 +1,10 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroDict_Str, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "OrderDetail.ValidationErrorMessage",
+      "StringId": "Discount",
+      "Str_eng": "Discount must be between 0.01 and 0.9"
+    }
+  ]
+}

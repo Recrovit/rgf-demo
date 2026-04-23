@@ -1,0 +1,8 @@
+﻿.bold {
+    font-weight: bold;
+}
+
+.gray-italic {
+    color: gray;
+    font-style: italic;
+}

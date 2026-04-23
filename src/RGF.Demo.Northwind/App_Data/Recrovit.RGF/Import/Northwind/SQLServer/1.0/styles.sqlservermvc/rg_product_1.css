@@ -1,0 +1,25 @@
+/*rg_product_1 => RG_Product (v1)*/
+div.rg-details.rg_product_1 { width: 713px; }
+div.rg-details.rg_product_1 div.ui-dialog-content div.rg-tabs { height: 361px; }
+/*rg-col-10025 => ProductID:*/
+.rg_product_1 div.rg-property[name="rg-col-10025"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10036 => ProductName:*/
+.rg_product_1 div.rg-property[name="rg-col-10036"] .rg-label { text-align: center; min-width: 150px; }
+.rg_product_1 div.rg-property[name="rg-col-10036"] .rg-cru { width: 300px; }
+/*rg-col-10027 => Category:*/
+.rg_product_1 div.rg-entity[name="rg-col-10027"] > div.rg-property[name="rg-col-10027"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10043 => UnitPrice:*/
+.rg_product_1 div.rg-property[name="rg-col-10043"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10037 => QuantityPerUnit:*/
+.rg_product_1 div.rg-property[name="rg-col-10037"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10031 => Discontinued*/
+.rg_product_1 div.rg-property[name="rg-col-10031"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10038 => ReorderLevel:*/
+.rg_product_1 div.rg-property[name="rg-col-10038"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10042 => SupplierID:*/
+.rg_product_1 div.rg-entity[name="rg-col-10042"] > div.rg-property[name="rg-col-10042"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10044 => UnitsInStock:*/
+.rg_product_1 div.rg-property[name="rg-col-10044"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10045 => UnitsOnOrder:*/
+.rg_product_1 div.rg-property[name="rg-col-10045"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10035 => Order_Details (v1)*/

@@ -1,0 +1,167 @@
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 28rem),
+        linear-gradient(180deg, #f6f8fb 0%, #eef3f8 100%);
+    color: #163047;
+}
+
+.sidebar {
+    background:
+        linear-gradient(180deg, #12304a 0%, #163b5a 48%, #204968 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.main-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.82);
+    border-bottom: 1px solid rgba(22, 48, 71, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+.brand-block {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.application-name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #12304a;
+}
+
+.application-subtitle {
+    margin: 0;
+    max-width: 42rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    color: #456278;
+}
+
+.auth-panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 2.75rem;
+}
+
+.auth-panel ::deep form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.auth-panel ::deep .header-signout,
+.sign-in-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.user-display-name {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.75rem;
+    font-weight: 700;
+    color: #12304a;
+}
+
+.auth-panel ::deep .header-signout {
+    border: 1px solid rgba(18, 48, 74, 0.16);
+    background-color: transparent;
+    color: #12304a;
+}
+
+.auth-panel ::deep .header-signout:hover {
+    background-color: rgba(18, 48, 74, 0.08);
+}
+
+.sign-in-link {
+    background-color: #12304a;
+    color: #fff;
+}
+
+.sign-in-link:hover {
+    background-color: #0f2840;
+    color: #fff;
+}
+
+.page-content {
+    flex: 1;
+    padding: 1.5rem 1.25rem 2rem;
+}
+
+.content-host {
+    width: min(100%, 78rem);
+    margin: 0 auto;
+}
+
+@media (max-width: 640.98px) {
+    .page-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.25rem 1rem;
+    }
+
+    .auth-panel {
+        justify-content: flex-start;
+    }
+
+    .user-display-name {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.6rem;
+    }
+
+    .page-content {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 641px) {
+    .app-shell {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 20rem;
+        min-height: 100vh;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        border-bottom: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .page-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding: 1.75rem 2rem 1.5rem;
+    }
+
+    .page-content {
+        padding: 2rem;
+    }
+}

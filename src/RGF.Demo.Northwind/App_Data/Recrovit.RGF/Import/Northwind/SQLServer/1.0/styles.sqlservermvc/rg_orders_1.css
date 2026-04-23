@@ -1,0 +1,37 @@
+/*rg_orders_1 => RG_Orders (v1)*/
+div.rg-details.rg_orders_1 { width: 686px; }
+div.rg-details.rg_orders_1 div.ui-dialog-content div.rg-tabs { height: 554px; }
+/*rg-col-10159 => OrderID:*/
+.rg_orders_1 div.rg-property[name="rg-col-10159"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10162 => CompanyName:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10162"] > div.rg-property[name="rg-col-10162"] .rg-label { text-align: center; min-width: 130px; }
+.rg_orders_1 div.rg-entity[name="rg-col-10162"] > div.rg-property[name="rg-col-10162"] .rg-cru { width: 300px; }
+/*rg-col-10163 => CustomerID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10163"] > div.rg-property[name="rg-col-10163"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10166 => EmployeeID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10166"] > div.rg-property[name="rg-col-10166"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10178 => ShipperID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10178"] > div.rg-property[name="rg-col-10178"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10167 => Freight:*/
+.rg_orders_1 div.rg-property[name="rg-col-10167"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10169 => OrderDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10169"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10170 => RequiredDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10170"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10172 => ShipAddress:*/
+.rg_orders_1 div.rg-property[name="rg-col-10172"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10173 => ShipCity:*/
+.rg_orders_1 div.rg-property[name="rg-col-10173"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10174 => ShipCountry:*/
+.rg_orders_1 div.rg-property[name="rg-col-10174"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10175 => ShipName:*/
+.rg_orders_1 div.rg-property[name="rg-col-10175"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10176 => ShippedDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10176"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10179 => ShipPostalCode:*/
+.rg_orders_1 div.rg-property[name="rg-col-10179"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10180 => ShipRegion:*/
+.rg_orders_1 div.rg-property[name="rg-col-10180"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10182 => RecroDictDemo:*/
+.rg_orders_1 div.rg-property[name="rg-col-10182"] .rg-label { text-align: center; min-width: 130px; }
+/*rg-col-10168 => Order_Details (v1)*/

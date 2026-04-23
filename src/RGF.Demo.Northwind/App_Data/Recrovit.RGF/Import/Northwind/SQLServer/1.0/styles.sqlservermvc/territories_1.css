@@ -1,0 +1,11 @@
+/*territories_1 => Territories (v1)*/
+div.rg-details.territories_1 { width: 653px; }
+div.rg-details.territories_1 div.ui-dialog-content div.rg-tabs { height: 234px; }
+/*rg-col-10071 => TerritoryID:*/
+.territories_1 div.rg-property[name="rg-col-10071"] .rg-label { text-align: center; min-width: 137px; }
+/*rg-col-10074 => RegionID:*/
+.territories_1 div.rg-entity[name="rg-col-10074"] > div.rg-property[name="rg-col-10074"] .rg-label { text-align: center; min-width: 137px; }
+/*rg-col-10077 => TerritoryDescription:*/
+.territories_1 div.rg-property[name="rg-col-10077"] .rg-label { text-align: center; min-width: 137px; }
+.territories_1 div.rg-property[name="rg-col-10077"] .rg-cru { width: 414px; height: 75px; }
+/*rg-col-10072 => EmployeeTerritories (v1)*/

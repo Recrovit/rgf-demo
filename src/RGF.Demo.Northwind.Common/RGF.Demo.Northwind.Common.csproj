@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup Condition="Exists('$(LocalRgfAbstractionProject)')">
+    <ProjectReference Include="$(LocalRgfAbstractionProject)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfAbstractionProject)')">
+    <PackageReference Include="Recrovit.RecroGridFramework.Abstraction" Version="10.1.0" />
+  </ItemGroup>
+
+</Project>

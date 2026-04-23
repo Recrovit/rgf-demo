@@ -1,0 +1,88 @@
+﻿@page "/"
+@attribute [RecrovitPageRoute(RecrovitRouteMode.InteractiveAuto, LayoutType = typeof(MainLayout))]
+
+<PageTitle>Home</PageTitle>
+
+<section class="home-page" aria-labelledby="home-page-title">
+    <div class="home-grid">
+        <article class="info-card info-card-featured">
+            <div class="card-copy">
+                <h1 id="home-page-title">Welcome to the RecroGrid Framework Demo App</h1>
+                <p>
+                    This page is the starting point of the RecroGrid Framework Demo App. It gives a clear overview of the demo and
+                    provides quick access to the main entry points and the related RecroGrid Framework and Schemora websites.
+                </p>
+            </div>
+
+            <div class="card-actions">
+                <a class="card-action card-action-primary" href="/rgf">Enter Demo App</a>
+                <a class="card-action card-action-secondary" href="/userinfo">User Information</a>
+            </div>
+        </article>
+
+        <article class="info-card">
+            <div class="card-copy">
+                <h2>Demo Solution Overview</h2>
+                <p>
+                    The demo solution is built on the Northwind sample database and presents a quick-start application structure.
+                    It includes a server-side API, a Blazor App and Client setup, OIDC-based authentication, and integrated
+                    client-server operation, focused on the built-in capabilities of the RecroGrid Framework with minimal custom functionality.
+                </p>
+            </div>
+        </article>
+
+        <article class="info-card">
+            <div class="card-copy">
+                <h2>What You Can Explore</h2>
+                <p>
+                    Use this demo environment to explore application entry, user identity information, and the overall structure of a
+                    RecroGrid Framework based solution. The page serves as a clear starting point for understanding how the demo
+                    application, the framework, and the related platform components fit together.
+                </p>
+            </div>
+        </article>
+
+        <article class="info-card">
+            <div class="card-copy">
+                <h2>About RecroGrid Framework</h2>
+                <p>
+                    RecroGrid Framework is a professional, integrated development framework for complex data-centric business applications.
+                    It provides a unified client-server architecture, powerful runtime automation, and full code-level customization for
+                    precise and scalable business implementation.
+                </p>
+            </div>
+        </article>
+
+        <article class="info-card">
+            <div class="card-copy">
+                <h2>About Schemora</h2>
+                <p>
+                    Schemora is an AI-powered service for accelerating solution setup by generating a structured project foundation and
+                    an initial domain model tailored for RecroGrid Framework based applications. It helps teams move faster from idea to
+                    implementation with a consistent and practical starting point.
+                </p>
+            </div>
+        </article>
+
+        <article class="info-card">
+            <div class="card-copy">
+                <h2>Related Platforms</h2>
+
+                <div class="platform-list">
+                    <div class="platform-item">
+                        <h3><a class="platform-link" href="https://recrogridframework.com" target="_blank" rel="noopener noreferrer">RecroGrid Framework</a></h3>
+                        <p>Explore the main product website for framework positioning, feature overview, and documentation entry points.</p>
+                    </div>
+
+                    <div class="platform-item">
+                        <h3><a class="platform-link" href="https://schemora.com" target="_blank" rel="noopener noreferrer">Schemora</a></h3>
+                        <p>
+                            Explore the AI-powered service that generates a structured project foundation and domain model starting point
+                            for RecroGrid Framework solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
