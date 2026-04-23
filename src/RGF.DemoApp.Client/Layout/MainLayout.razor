@@ -1,0 +1,53 @@
+﻿@inherits LayoutComponentBase
+@inject IRecroSecService RecroSec
+@inject NavigationManager Navigation
+
+<HeadContent>
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+</HeadContent>
+
+<div class="app-shell">
+    <aside class="sidebar">
+        <NavMenu />
+    </aside>
+
+    <div class="main-column">
+        <header class="page-header">
+            <div class="brand-block">
+                <p class="application-name">RecroGrid Framework Demo App</p>
+                <p class="application-subtitle">Northwind-based business application powered by RecroGrid Framework</p>
+            </div>
+
+            <div class="auth-panel">
+                <AuthorizeView Context="state">
+                    <Authorized>
+                        <span class="user-display-name">@GetDisplayName(state.User)</span>
+                        <LogoutForm ReturnUrl="/" ButtonText="Sign out" ButtonClass="header-signout" />
+                    </Authorized>
+                    <NotAuthorized>
+                        <a href="@LoginHref" class="sign-in-link">Sign in</a>
+                    </NotAuthorized>
+                </AuthorizeView>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <article class="content-host">
+                @Body
+            </article>
+        </main>
+    </div>
+</div>
+
+@code {
+    private string LoginHref => $"/authentication/login?returnUrl={Uri.EscapeDataString(GetReturnUrl())}";
+
+    private string GetReturnUrl()
+    {
+        var relativePath = Navigation.ToBaseRelativePath(Navigation.Uri);
+        return string.IsNullOrWhiteSpace(relativePath) ? "/" : $"/{relativePath}";
+    }
+
+    private string GetDisplayName(System.Security.Claims.ClaimsPrincipal user)
+        => RecroSec.UserName ?? user.Identity?.Name ?? "Signed in user";
+}

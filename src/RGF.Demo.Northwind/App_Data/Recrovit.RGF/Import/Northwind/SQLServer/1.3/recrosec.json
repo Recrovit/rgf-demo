@@ -1,0 +1,537 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroSec_PermissionType, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "PermissionId": 1,
+      "PermissionName": "Create",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 2,
+          "PermissionId": 1,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 2,
+            "PermissionGroupName": "RGF.Write",
+            "RecroSec_OPPG": [
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 8,
+          "PermissionId": 1,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 8,
+            "PermissionGroupName": "Organization.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 8,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 11,
+          "PermissionId": 1,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 11,
+            "PermissionGroupName": "Procurement.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 11,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 14,
+          "PermissionId": 1,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 14,
+            "PermissionGroupName": "Sales.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 14,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 2,
+      "PermissionName": "Read",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 1,
+          "PermissionId": 2,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 1,
+            "PermissionGroupName": "RGF.Read",
+            "RecroSec_OPPG": [
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 7,
+          "PermissionId": 2,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 7,
+            "PermissionGroupName": "Organization.Data.Read",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 7,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 10,
+          "PermissionId": 2,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 10,
+            "PermissionGroupName": "Procurement.Data.Read",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 10,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 13,
+          "PermissionId": 2,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 13,
+            "PermissionGroupName": "Sales.Data.Read",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 13,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 4,
+      "PermissionName": "Update",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 2,
+          "PermissionId": 4,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 2,
+            "PermissionGroupName": "RGF.Write",
+            "RecroSec_OPPG": [
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 8,
+          "PermissionId": 4,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 8,
+            "PermissionGroupName": "Organization.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 8,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 11,
+          "PermissionId": 4,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 11,
+            "PermissionGroupName": "Procurement.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 11,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 14,
+          "PermissionId": 4,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 14,
+            "PermissionGroupName": "Sales.Data.Edit",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 14,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 8,
+      "PermissionName": "Delete",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 3,
+          "PermissionId": 8,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 3,
+            "PermissionGroupName": "RGF.Delete",
+            "RecroSec_OPPG": [
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 9,
+          "PermissionId": 8,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 9,
+            "PermissionGroupName": "Organization.Data.Delete",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 9,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 12,
+          "PermissionId": 8,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 12,
+            "PermissionGroupName": "Procurement.Data.Delete",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 12,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "PermissionGroupId": 15,
+          "PermissionId": 8,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 15,
+            "PermissionGroupName": "Sales.Data.Delete",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 15,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 1001,
+      "PermissionName": "RGF.QueryString",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 5,
+          "PermissionId": 1001,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 5,
+            "PermissionGroupName": "RGF.PowerUser",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 1002,
+      "PermissionName": "RGF.QuickWatch",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 5,
+          "PermissionId": 1002,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 5,
+            "PermissionGroupName": "RGF.PowerUser",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 1003,
+      "PermissionName": "RGF.PublicFilterSetting",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 5,
+          "PermissionId": 1003,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 5,
+            "PermissionGroupName": "RGF.PowerUser",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 5,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "PermissionId": 1004,
+      "PermissionName": "RGF.Export",
+      "RecroSec_Permission": [
+        {
+          "PermissionGroupId": 6,
+          "PermissionId": 1004,
+          "Permission": true,
+          "RecroSec_PermissionGroup": {
+            "PermissionGroupId": 6,
+            "PermissionGroupName": "RGF.Export",
+            "RecroSec_OPPG": [
+              {
+                "ObjectPermissionId": 5,
+                "PermissionGroupId": 6,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 5,
+                  "ObjectName": "Organization.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 6,
+                "PermissionGroupId": 6,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 6,
+                  "ObjectName": "Procurement.Data",
+                  "Inheritance": false
+                }
+              },
+              {
+                "ObjectPermissionId": 7,
+                "PermissionGroupId": 6,
+                "Inheritable": false,
+                "Priority": 0,
+                "RecroSec_ObjectPermission": {
+                  "ObjectPermissionId": 7,
+                  "ObjectName": "Sales.Data",
+                  "Inheritance": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

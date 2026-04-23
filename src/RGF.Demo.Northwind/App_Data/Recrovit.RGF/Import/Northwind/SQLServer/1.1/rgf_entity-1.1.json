@@ -1,0 +1,103 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10003,
+      "EntityName": "RG_Employee",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Employee, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 11113,
+          "EntityId": 10003,
+          "ColName": "EmployeeView",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 65535,
+          "RecroGrid_Options": [
+            {
+              "Id": 1386,
+              "EntityId": 10003,
+              "PropertyId": 11113,
+              "OptionKey": "RGO_OuterJoin",
+              "OptionValue": "v_employee ev on ev.EmployeeID={0}.EmployeeID",
+              "IsClientParam": false
+            }
+          ]
+        },
+        {
+          "PropertyId": 11110,
+          "EntityId": 10003,
+          "ColName": "NSQL:EmployeeView.EmployeeName",
+          "Alias": "EmployeeName",
+          "ColTitle": "Employee Name",
+          "ColPos": 1,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 11112,
+          "EntityId": 10003,
+          "ColName": "NSQL:EmployeeView.OrdersCount",
+          "Alias": "OrdersCount",
+          "ColTitle": "Count of orders",
+          "ColPos": 1,
+          "ColWidth": 0,
+          "ListType": 1,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 65535
+        }
+      ]
+    },
+    {
+      "EntityId": 10008,
+      "EntityName": "RG_Orders",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Orders, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 11111,
+          "EntityId": 10008,
+          "ColName": "NSQL:EntityBase.EmployeeName",
+          "ColPos": 1,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 65535,
+          "EntityBase": 10003,
+          "MigrEntityBaseName": "Employees"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+﻿@page "/userinfo"
+@attribute [RecrovitPageRoute(RecrovitRouteMode.InteractiveAuto, LayoutType = typeof(MainLayout))]
+@attribute [Authorize]
+
+@using RGF.DemoApp.Client.Services
+
+<PageTitle>IDP Profile</PageTitle>
+
+<h1>OIDC UserInfo profile</h1>
+
+<p>
+    This sample calls the demo application's own <code>/api/userinfo</code> endpoint through an app-specific client service.
+    The host endpoint remains responsible for using the configured downstream proxy settings and mapping the result to <code>UserInfoDto</code>.
+</p>
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else if (profile is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <dl class="row">
+        <dt class="col-sm-3">Subject</dt>
+        <dd class="col-sm-9">@profile.Subject</dd>
+
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@profile.Name</dd>
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@profile.Email</dd>
+
+        <dt class="col-sm-3">Roles</dt>
+        <dd class="col-sm-9">@(profile.Roles.Count == 0 ? "none" : string.Join(", ", profile.Roles))</dd>
+    </dl>
+
+    @if (profile.AdditionalClaims.Count > 0)
+    {
+        <h2 class="h5 mt-4">Additional claims</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Claim</th>
+                    <th>Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in profile.AdditionalClaims)
+                {
+                    <tr>
+                        <td>@claim.Key</td>
+                        <td>@string.Join(", ", claim.Value)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@inject IUserInfoApiClient UserInfoApiClient
+@code {
+    private UserInfoDto? profile;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            profile = await UserInfoApiClient.GetAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to retrieve userinfo data: {ex.Message}";
+        }
+    }
+}

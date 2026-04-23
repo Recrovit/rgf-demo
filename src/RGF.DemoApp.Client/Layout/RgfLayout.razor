@@ -1,0 +1,58 @@
+﻿@inherits LayoutComponentBase
+
+<RgfRootComponent @key="_contentKey">
+    <header>
+        <div>
+            <MenuComponent MenuParameters="new RgfMenuParameters() { MenuId = 10001, Navbar = true }" />
+        </div>
+        <div class="theme-switcher">
+            <div>
+                <div class="login-display">
+                    <LoginDisplay />
+                </div>
+                <div>
+                    <SetTheme />
+                </div>
+                <div class="lib">
+                    <select value="@_recroSec.UserLanguage" @onchange="(args) => _recroSec.SetUserLanguageAsync(args.Value?.ToString())">
+                        @foreach (var language in _recroDict.Languages)
+                        {
+                            <option value="@language.Key">@language.Value</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow-1 m-2">
+        @Body
+    </main>
+</RgfRootComponent>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@inject IRecroSecService _recroSec
+@inject IRecroDictService _recroDict
+@code {
+    private int _contentKey;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        _recroSec.LanguageChangedEvent.Subscribe(LanguageChangedAsync);
+    }
+
+    private Task LanguageChangedAsync(DataEventArgs<string> _)
+    {
+        return InvokeAsync(() =>
+        {
+            _contentKey++;
+            StateHasChanged();
+        });
+    }
+}

@@ -1,0 +1,43 @@
+<div class="nav-shell">
+    <div class="nav-mobile-bar">
+        <span class="nav-mobile-title">Menu</span>
+    </div>
+
+    <input type="checkbox" title="Navigation menu" class="nav-toggle" />
+
+    <div class="nav-scrollable" onclick="document.querySelector('.nav-toggle').click()">
+        <nav class="nav-sections" aria-label="Primary navigation">
+            <section class="nav-section">
+                <h2 class="nav-section-title">Navigation</h2>
+
+                <div class="nav-item">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">Home</NavLink>
+                </div>
+
+                <div class="nav-item">
+                    <RecrovitModeAwareNavLink Href="/rgf">Enter RGF Demo App</RecrovitModeAwareNavLink>
+                </div>
+
+                <div class="nav-item">
+                    <NavLink class="nav-link" href="userinfo">User Information</NavLink>
+                </div>
+            </section>
+
+            <section class="nav-section">
+                <h2 class="nav-section-title">Related Links</h2>
+
+                <div class="nav-item">
+                    <a class="nav-link external-link" href="https://recrogridframework.com/" target="_blank" rel="noreferrer noopener">
+                        RecroGrid Framework
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link external-link" href="https://schemora.com/" target="_blank" rel="noreferrer noopener">
+                        Schemora
+                    </a>
+                </div>
+            </section>
+        </nav>
+    </div>
+</div>

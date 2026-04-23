@@ -1,0 +1,131 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10001,
+      "EntityName": "RG_Category",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Category, DefaultAssemblyName",
+      "Category": 1,
+      "Title": "<%%>Entity.UI.Categories_1._EntityName",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10007,
+          "EntityId": 10001,
+          "ColName": "DropdownStatic",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 4,
+          "FormTab": 1,
+          "FormPos": 1,
+          "RecroGrid_Options": [
+            {
+              "Id": 267,
+              "EntityId": 10001,
+              "PropertyId": 10007,
+              "OptionKey": "RGO_DictionaryItems",
+              "OptionValue": "{1:Static-Item1;2:Static-Item2;3:Static-Item3}"
+            },
+            {
+              "EntityId": 10001,
+              "PropertyId": 10007,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "true"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10008,
+          "EntityId": 10001,
+          "ColName": "DropdownRecroDict",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 4,
+          "FormTab": 1,
+          "FormPos": 2,
+          "RecroGrid_Options": [
+            {
+              "Id": 268,
+              "EntityId": 10001,
+              "PropertyId": 10008,
+              "OptionKey": "RGO_DictionaryItems",
+              "OptionValue": "<%%>DropdownRecroDict"
+            },
+            {
+              "EntityId": 10001,
+              "PropertyId": 10008,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "true"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10246,
+          "EntityId": 10001,
+          "ColName": "DropdownEnum",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 4,
+          "FormTab": 1,
+          "FormPos": 3,
+          "RecroGrid_Options": [
+            {
+              "Id": 269,
+              "EntityId": 10001,
+              "PropertyId": 10246,
+              "OptionKey": "RGO_DictionaryItems",
+              "OptionValue": "Enum:RGF.Demo.Northwind.Entities.DropdownEnumTest, DefaultAssemblyName"
+            },
+            {
+              "EntityId": 10001,
+              "PropertyId": 10246,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "true"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10247,
+          "EntityId": 10001,
+          "ColName": "DropdownCallback",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 4,
+          "FormTab": 1,
+          "FormPos": 4,
+          "RecroGrid_Options": [
+            {
+              "Id": 270,
+              "EntityId": 10001,
+              "PropertyId": 10247,
+              "OptionKey": "RGO_DictionaryItems",
+              "OptionValue": "Callback:DropdownCallbackTest"
+            },
+            {
+              "EntityId": 10001,
+              "PropertyId": 10247,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

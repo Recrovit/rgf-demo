@@ -1,0 +1,53 @@
+<Solution>
+  <Folder Name="/External/">
+    <Project Path="../Recrovit.AspNetCore.Authentication.OpenIdConnect/src/Recrovit.AspNetCore.Authentication.OpenIdConnect.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../Recrovit.AspNetCore.Components.Routing/src/Recrovit.AspNetCore.Components.Routing.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Abstraction/RGF.Abstraction.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Blazor.RgfApexCharts/RGF.Blazor.RgfApexCharts.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Client.Blazor.Host.OpenIdConnect/RGF.Client.Blazor.Host.OpenIdConnect.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Client.Blazor.SessionAuth/RGF.Client.Blazor.SessionAuth.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Client.Blazor.UI/RGF.Client.Blazor.UI.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Client.Blazor/RGF.Client.Blazor.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-client/src/RGF.Client/RGF.Client.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+    <Project Path="../rgf-core/src/RGF.Core.csproj">
+      <Build Solution="Release|*" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/legacy/">
+    <Project Path="src/RGF.Demo.BlazorWasm/RGF.Demo.BlazorWasm.csproj" />
+    <Project Path="src/RGF.Demo.MVC/RGF.Demo.MVC.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RGF.DemoApp.Tests/RGF.DemoApp.Tests.csproj" />
+  </Folder>
+  <Project Path="src/RGF.Demo.API/RGF.Demo.API.csproj" />
+  <Project Path="src/RGF.Demo.IDP/RGF.Demo.IDP.csproj" />
+  <Project Path="src/RGF.Demo.Northwind.Common/RGF.Demo.Northwind.Common.csproj" />
+  <Project Path="src/RGF.Demo.Northwind/RGF.Demo.Northwind.csproj" />
+  <Project Path="src/RGF.DemoApp.Client/RGF.DemoApp.Client.csproj" />
+  <Project Path="src/RGF.DemoApp/RGF.DemoApp.csproj" />
+</Solution>

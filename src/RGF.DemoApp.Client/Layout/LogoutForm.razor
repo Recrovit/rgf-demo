@@ -1,0 +1,19 @@
+<form action="/authentication/logout" method="post" class="@FormClass">
+    <AntiforgeryToken />
+    <input type="hidden" name="returnUrl" value="@ReturnUrl" />
+    <button type="submit" class="@ButtonClass">@ButtonText</button>
+</form>
+
+@code {
+    [Parameter]
+    public string ReturnUrl { get; set; } = "/";
+
+    [Parameter]
+    public string ButtonText { get; set; } = "Log out";
+
+    [Parameter]
+    public string ButtonClass { get; set; } = "btn btn-link";
+
+    [Parameter]
+    public string FormClass { get; set; } = "d-inline";
+}

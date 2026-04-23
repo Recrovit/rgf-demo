@@ -1,0 +1,37 @@
+
+/*rg_orders_1 => RG_Orders (v1)*/
+div.rg-details.rg_orders_1 { width: 713px; }
+div.rg-details.rg_orders_1 div.ui-dialog-content div.rg-tabs { height: 537px; }
+/*rg-col-10167 => CompanyName:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10167"] > div.rg-property[name="rg-col-10167"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10188 => RecroDictDemo:*/
+.rg_orders_1 div.rg-property[name="rg-col-10188"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10178 => ShipAddress:*/
+.rg_orders_1 div.rg-property[name="rg-col-10178"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10179 => ShipCity:*/
+.rg_orders_1 div.rg-property[name="rg-col-10179"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10164 => OrderID:*/
+.rg_orders_1 div.rg-property[name="rg-col-10164"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10172 => Freight:*/
+.rg_orders_1 div.rg-property[name="rg-col-10172"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10175 => OrderDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10175"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10176 => RequiredDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10176"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10180 => ShipCountry:*/
+.rg_orders_1 div.rg-property[name="rg-col-10180"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10181 => ShipName:*/
+.rg_orders_1 div.rg-property[name="rg-col-10181"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10185 => ShipPostalCode:*/
+.rg_orders_1 div.rg-property[name="rg-col-10185"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10186 => ShipRegion:*/
+.rg_orders_1 div.rg-property[name="rg-col-10186"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10182 => ShippedDate:*/
+.rg_orders_1 div.rg-property[name="rg-col-10182"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10168 => CustomerID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10168"] > div.rg-property[name="rg-col-10168"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10171 => EmployeeID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10171"] > div.rg-property[name="rg-col-10171"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10184 => ShipperID:*/
+.rg_orders_1 div.rg-entity[name="rg-col-10184"] > div.rg-property[name="rg-col-10184"] .rg-label { text-align: center; min-width: 150px; }
+/*rg-col-10174 => Order_Details (v1)*/

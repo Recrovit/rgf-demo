@@ -1,0 +1,10 @@
+/*region_1 => Region (v1)*/
+div.rg-details.region_1 { width: 605px; }
+div.rg-details.region_1 div.ui-dialog-content div.rg-tabs { height: 181px; }
+/*rg-col-10085 => RegionID:*/
+.region_1 div.rg-property[name="rg-col-10085"] .rg-label { text-align: center; min-width: 130px; }
+.region_1 div.rg-property[name="rg-col-10085"] .rg-cru { width: 80px; }
+/*rg-col-10086 => RegionDescription:*/
+.region_1 div.rg-property[name="rg-col-10086"] .rg-label { text-align: center; min-width: 130px; }
+.region_1 div.rg-property[name="rg-col-10086"] .rg-cru { height: 69px; width: 380px; }
+/*rg-col-10088 => Territories (v1)*/

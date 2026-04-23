@@ -1,0 +1,181 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10003,
+      "EntityName": "RG_Employee",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Employee, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 663,
+          "EntityId": 10003,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Organization.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10005,
+      "EntityName": "Region",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.Region, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 662,
+          "EntityId": 10005,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Organization.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10006,
+      "EntityName": "Shippers",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.Shippers, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 661,
+          "EntityId": 10006,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Organization.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10009,
+      "EntityName": "EmployeeTerritories",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.EmployeeTerritories, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 660,
+          "EntityId": 10009,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Organization.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10012,
+      "EntityName": "Territories",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.Territories, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 659,
+          "EntityId": 10012,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Organization.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10001,
+      "EntityName": "RG_Category",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Category, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 666,
+          "EntityId": 10001,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Procurement.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10004,
+      "EntityName": "RG_Product",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Product, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 665,
+          "EntityId": 10004,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Procurement.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10011,
+      "EntityName": "Suppliers",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.Suppliers, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 664,
+          "EntityId": 10011,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Procurement.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10002,
+      "EntityName": "Customers",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,DefaultNamespace.Customers, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 669,
+          "EntityId": 10002,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Sales.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10008,
+      "EntityName": "RG_Orders",
+      "EntityVersion": "1",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_Orders, DefaultAssemblyName",
+      "Category": 1,
+      "RecroGrid_Options": [
+        {
+          "Id": 668,
+          "EntityId": 10008,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Sales.Data",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10010,
+      "EntityName": "RG_OrderDetails",
+      "TypeDefinition": "RGF.Demo.Northwind.Entities.RG_OrderDetails, DefaultAssemblyName",
+      "EntityVersion": "1",
+      "Category": 2,
+      "RecroGrid_Options": [
+        {
+          "Id": 667,
+          "EntityId": 10010,
+          "OptionKey": "RGO_RecroSec",
+          "OptionValue": "Sales.Data",
+          "IsClientParam": false
+        }
+      ]
+    }
+  ]
+}
