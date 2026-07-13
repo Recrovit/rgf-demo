@@ -15,8 +15,7 @@
     <HeadOutlet @rendermode="CurrentRenderMode" />
 </head>
 
-<body class="small">
-
+<body>
     @if (CurrentPageDefinition.RouteMode is RecrovitRouteMode.StaticServer or RecrovitRouteMode.InteractiveServer)
     {
         <RecrovitRoutes @rendermode="CurrentRenderMode" Kind="RecrovitRoutesKind.Host" />

@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.0.7" />
-    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="10.0.7" />
-    <PackageReference Include="NLog.Web.AspNetCore" Version="6.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="10.0.10" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('$(LocalRgfHostProject)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect" Version="10.1.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect" Version="10.2.0" />
   </ItemGroup>
 
 </Project>

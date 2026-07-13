@@ -1,10 +1,21 @@
 @page "/rgf"
+@page "/rgf/dashboard"
 @page "/rgf/entity/{EntityName}"
 @page "/rgf/admin/{EntityName?}"
 @attribute [RecrovitPageRoute(RecrovitRouteMode.ClientOnly, LayoutType = typeof(RgfLayout))]
 @attribute [Authorize]
 
-<RgfEntityContent EntityName="@EntityName" Mode="@PageMode" />
+@if (string.IsNullOrWhiteSpace(EntityName))
+{
+    if (_dashboardPageComponentType != null)
+    {
+        <DynamicComponent Type="_dashboardPageComponentType" />
+    }
+}
+else
+{
+    <RgfEntityContent EntityName="@EntityName" Mode="@PageMode" />
+}
 
 @inject NavigationManager Navigation
 @code {
@@ -12,8 +23,15 @@
     [Parameter]
     public string? EntityName { get; set; }
 
+    private Type? _dashboardPageComponentType;
+
     private RgfEntityContent.RgfEntityPageMode PageMode =>
         Navigation.ToBaseRelativePath(Navigation.Uri).StartsWith("rgf/admin", StringComparison.OrdinalIgnoreCase)
             ? RgfEntityContent.RgfEntityPageMode.Legacy
             : RgfEntityContent.RgfEntityPageMode.Entity;
+
+    protected override void OnInitialized()
+    {
+        RgfBlazorConfiguration.TryGetComponentType(RgfBlazorConfiguration.ComponentType.DashboardPage, out _dashboardPageComponentType);
+    }
 }

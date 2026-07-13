@@ -30,6 +30,15 @@
     {
       "MenuId": 10003,
       "MenuType": 6,
+      "ParentId": 10001,
+      "Title": "Dashboard",
+      "Command": "/rgf/dashboard",
+      "MenuPos": 2,
+      "AlwayVisible": true
+    },
+    {
+      "MenuId": 10004,
+      "MenuType": 6,
       "EntityName": null,
       "ParentId": 10001,
       "ParentMenu": null,
@@ -45,7 +54,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10004,
+      "MenuId": 10005,
       "MenuType": 6,
       "EntityName": null,
       "ParentId": 10001,
@@ -62,7 +71,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10005,
+      "MenuId": 10006,
       "MenuType": 6,
       "EntityName": null,
       "ParentId": 10001,
@@ -79,7 +88,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10006,
+      "MenuId": 10007,
       "MenuType": 4,
       "EntityName": null,
       "ParentId": 10001,
@@ -96,7 +105,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10007,
+      "MenuId": 10008,
       "MenuType": 6,
       "EntityName": "RG_Product_2",
       "ParentId": 10001,
@@ -113,7 +122,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10008,
+      "MenuId": 10009,
       "MenuType": 6,
       "EntityName": "RG_Product_3",
       "ParentId": 10001,
@@ -130,7 +139,7 @@
       "Scope": null
     },
     {
-      "MenuId": 10009,
+      "MenuId": 10010,
       "MenuType": 3,
       "EntityName": null,
       "ParentId": 10001,

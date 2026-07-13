@@ -1,31 +1,23 @@
 ﻿@inherits LayoutComponentBase
 
 <RgfRootComponent @key="_contentKey">
-    <header>
-        <div>
-            <MenuComponent MenuParameters="new RgfMenuParameters() { MenuId = 10001, Navbar = true }" />
-        </div>
-        <div class="theme-switcher">
-            <div>
-                <div class="login-display">
-                    <LoginDisplay />
-                </div>
-                <div>
-                    <SetTheme />
-                </div>
-                <div class="lib">
-                    <select value="@_recroSec.UserLanguage" @onchange="(args) => _recroSec.SetUserLanguageAsync(args.Value?.ToString())">
-                        @foreach (var language in _recroDict.Languages)
-                        {
-                            <option value="@language.Key">@language.Value</option>
-                        }
-                    </select>
-                </div>
-            </div>
+    <header class="rgf-page-header">
+        <div class="rgf-navbar-host">
+            <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                             NavbarBreakpoint="lg"
+                             BrandText="RGF Demo App"
+                             ShowThemeSelector="true"
+                             ShowLanguageSelector="true">
+                <NavbarRightContent>
+                    <div class="login-display">
+                        <LoginDisplay />
+                    </div>
+                </NavbarRightContent>
+            </NavbarComponent>
         </div>
     </header>
 
-    <main class="flex-grow-1 m-2">
+    <main class="rgf-page-main">
         @Body
     </main>
 </RgfRootComponent>
@@ -37,7 +29,6 @@
 </div>
 
 @inject IRecroSecService _recroSec
-@inject IRecroDictService _recroDict
 @code {
     private int _contentKey;
 
