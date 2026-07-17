@@ -124,7 +124,6 @@ public partial class MainLayout
                 _libraryWrapper = typeof(Recrovit.RecroGridFramework.Client.Blazor.UI.Components.RgfRootComponent);
                 await _serviceProvider.InitializeRgfUIAsync("light");
                 InitComponents(typeof(Recrovit.RecroGridFramework.Client.Blazor.UI.Components.MenuComponent), typeof(Recrovit.RecroGridFramework.Client.Blazor.UI.Components.ThemeSelector), "light");
-                await _jsRuntime.InvokeVoidAsync("eval", $"$('body').addClass('small')");
                 RegisterEntityComponent();
                 break;
 #if DevExpressEnabled
