@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('$(LocalRgfCore)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Core" Version="10.2.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Core" Version="10.2.1" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
