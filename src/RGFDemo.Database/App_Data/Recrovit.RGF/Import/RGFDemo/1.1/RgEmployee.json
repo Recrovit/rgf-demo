@@ -1,0 +1,771 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10005,
+      "EntityName": "RgEmployee",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgEmployee, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Employee._EntityName",
+      "EntityComment": "Stores employee records including personal details, contact information, and employment dates. Employees can report to another employee through a hierarchical relationship. They may also be assigned to orders and territories.",
+      "RecroGrid_Options": [
+        {
+          "Id": 10313,
+          "EntityId": 10005,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "EmployeeId,LastName,LastName"
+        },
+        {
+          "Id": 10449,
+          "EntityId": 10005,
+          "OptionKey": "RGO_ItemsPerPage",
+          "OptionValue": "10",
+          "IsClientParam": true
+        },
+        {
+          "Id": 10312,
+          "EntityId": 10005,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Employee.Tooltip",
+          "IsClientParam": true
+        }
+      ],
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10033,
+          "EntityId": 10005,
+          "ColName": "EmployeeId",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10046,
+          "EntityId": 10005,
+          "ColName": "Address",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Address",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65543,
+          "PropertyComment": "Stores the employee's street address.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10329,
+              "EntityId": 10005,
+              "PropertyId": 10046,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "60",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10328,
+              "EntityId": 10005,
+              "PropertyId": 10046,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10044,
+          "EntityId": 10005,
+          "ColName": "BirthDate",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.BirthDate",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 6,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65541,
+          "PropertyComment": "Stores the employee's birth date and time.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10326,
+              "EntityId": 10005,
+              "PropertyId": 10044,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10047,
+          "EntityId": 10005,
+          "ColName": "City",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.City",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65544,
+          "PropertyComment": "Stores the city portion of the employee's address.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10331,
+              "EntityId": 10005,
+              "PropertyId": 10047,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10330,
+              "EntityId": 10005,
+              "PropertyId": 10047,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10050,
+          "EntityId": 10005,
+          "ColName": "Country",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Country",
+          "ColPos": 4,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65547,
+          "PropertyComment": "Stores the country portion of the employee's address.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10337,
+              "EntityId": 10005,
+              "PropertyId": 10050,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10336,
+              "EntityId": 10005,
+              "PropertyId": 10050,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10052,
+          "EntityId": 10005,
+          "ColName": "Extension",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Extension",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65549,
+          "PropertyComment": "Stores the employee's phone extension.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10341,
+              "EntityId": 10005,
+              "PropertyId": 10052,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "4",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10340,
+              "EntityId": 10005,
+              "PropertyId": 10052,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10041,
+          "EntityId": 10005,
+          "ColName": "FirstName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.FirstName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65538,
+          "PropertyComment": "Stores the employee's given name.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10321,
+              "EntityId": 10005,
+              "PropertyId": 10041,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10045,
+          "EntityId": 10005,
+          "ColName": "HireDate",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.HireDate",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 6,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65542,
+          "PropertyComment": "Stores the date and time the employee was hired.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10327,
+              "EntityId": 10005,
+              "PropertyId": 10045,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10051,
+          "EntityId": 10005,
+          "ColName": "HomePhone",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.HomePhone",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65548,
+          "PropertyComment": "Stores the employee's home phone number.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10339,
+              "EntityId": 10005,
+              "PropertyId": 10051,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10338,
+              "EntityId": 10005,
+              "PropertyId": 10051,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10040,
+          "EntityId": 10005,
+          "ColName": "LastName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.LastName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65537,
+          "PropertyComment": "Stores the employee's family name.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10320,
+              "EntityId": 10005,
+              "PropertyId": 10040,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "20",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10054,
+          "EntityId": 10005,
+          "ColName": "Notes",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Notes",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 2,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65550,
+          "PropertyComment": "Stores free-form notes and comments related to the employee.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10343,
+              "EntityId": 10005,
+              "PropertyId": 10054,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10037,
+          "EntityId": 10005,
+          "ColName": "ParentEmployee",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormGroup": 0,
+          "FormPos": 1,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "Id": 10317,
+              "EntityId": 10005,
+              "PropertyId": 10037,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ReportsTo"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10053,
+          "EntityId": 10005,
+          "ColName": "Photo",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Photo",
+          "ColPos": 2,
+          "ColWidth": 0,
+          "ListType": 4,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 11,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "PropertyComment": "Stores binary photo data for the employee.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10441,
+              "EntityId": 10005,
+              "PropertyId": 10053,
+              "OptionKey": "RGO_JQReplace",
+              "OptionValue": "$('img', args.Self).css('width', '40px');",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10342,
+              "EntityId": 10005,
+              "PropertyId": 10053,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10055,
+          "EntityId": 10005,
+          "ColName": "PhotoPath",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.PhotoPath",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65551,
+          "PropertyComment": "Stores the path to the employee photo.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10345,
+              "EntityId": 10005,
+              "PropertyId": 10055,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "255",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10344,
+              "EntityId": 10005,
+              "PropertyId": 10055,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10049,
+          "EntityId": 10005,
+          "ColName": "PostalCode",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.PostalCode",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65546,
+          "PropertyComment": "Stores the postal or ZIP code used in the employee's address.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10335,
+              "EntityId": 10005,
+              "PropertyId": 10049,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10334,
+              "EntityId": 10005,
+              "PropertyId": 10049,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10048,
+          "EntityId": 10005,
+          "ColName": "Region",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Region",
+          "ColPos": 3,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65545,
+          "PropertyComment": "Stores the region or state portion of the employee's address.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10333,
+              "EntityId": 10005,
+              "PropertyId": 10048,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10332,
+              "EntityId": 10005,
+              "PropertyId": 10048,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10034,
+          "EntityId": 10005,
+          "ColName": "RelatedEmployee",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "Id": 10314,
+              "EntityId": 10005,
+              "PropertyId": 10034,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ReportsTo"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10035,
+          "EntityId": 10005,
+          "ColName": "RelatedEmployee.LastName",
+          "Alias": "RelatedEmployee_LastName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.LastName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65536,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "Id": 10315,
+              "EntityId": 10005,
+              "PropertyId": 10035,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10038,
+          "EntityId": 10005,
+          "ColName": "RelatedEmployeeTerritory",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 3,
+          "FormGroup": 0,
+          "FormPos": 1,
+          "EntityBase": 10006,
+          "MigrEntityBaseName": "RgEmployeeTerritory",
+          "RecroGrid_Options": [
+            {
+              "Id": 10318,
+              "EntityId": 10005,
+              "PropertyId": 10038,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "EmployeeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10039,
+          "EntityId": 10005,
+          "ColName": "RelatedOrder",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 4,
+          "FormGroup": 0,
+          "FormPos": 1,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "Id": 10319,
+              "EntityId": 10005,
+              "PropertyId": 10039,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "EmployeeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10036,
+          "EntityId": 10005,
+          "ColName": "ReportsTo",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "RecroGrid_Options": [
+            {
+              "Id": 10316,
+              "EntityId": 10005,
+              "PropertyId": 10036,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10056,
+          "EntityId": 10005,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        },
+        {
+          "PropertyId": 10042,
+          "EntityId": 10005,
+          "ColName": "Title",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.Title",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65539,
+          "PropertyComment": "Stores the employee's job title.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10323,
+              "EntityId": 10005,
+              "PropertyId": 10042,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "30",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10322,
+              "EntityId": 10005,
+              "PropertyId": 10042,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10043,
+          "EntityId": 10005,
+          "ColName": "TitleOfCourtesy",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.TitleOfCourtesy",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65540,
+          "PropertyComment": "Stores the employee's courtesy title.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10325,
+              "EntityId": 10005,
+              "PropertyId": 10043,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "25",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10324,
+              "EntityId": 10005,
+              "PropertyId": 10043,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10145,
+          "EntityId": 10005,
+          "ColName": "EmployeeView",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "RecroGrid_Options": [
+            {
+              "Id": 10439,
+              "EntityId": 10005,
+              "PropertyId": 10145,
+              "OptionKey": "RGO_OuterJoin",
+              "OptionValue": "v_employee ev on ev.EmployeeID={0}.EmployeeID"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10146,
+          "EntityId": 10005,
+          "ColName": "NSQL:EmployeeView.EmployeeName",
+          "Alias": "EmployeeName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.EmployeeName",
+          "ColPos": 1,
+          "ColWidth": 211,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "RecroGrid_Options": [
+            {
+              "Id": 10448,
+              "EntityId": 10005,
+              "PropertyId": 10146,
+              "OptionKey": "RGO_Sort",
+              "OptionValue": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

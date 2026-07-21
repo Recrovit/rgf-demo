@@ -1,0 +1,346 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.Abstraction.Models.RgfDashboardExport, Recrovit.RecroGridFramework.Abstraction",
+  "Data": [
+    {
+      "Dashboard": {
+        "Name": "1997 Sales Breakdown Dashboard",
+        "Description": "Dashboard showing 1997 net revenue distribution by product category and customer country, top-performing products, and the highest-revenue customers.",
+        "LayoutVersion": 1,
+        "Layout": {
+          "RootPane": {
+            "Split": {
+              "Direction": 2,
+              "Panes": [
+                {
+                  "Size": 0.8806,
+                  "Pane": {
+                    "Split": {
+                      "Direction": 1,
+                      "Panes": [
+                        {
+                          "Size": 1,
+                          "Pane": {
+                            "DashboardItemId": 11
+                          }
+                        },
+                        {
+                          "Size": 1,
+                          "Pane": {
+                            "DashboardItemId": 12
+                          }
+                        },
+                        {
+                          "Size": 1,
+                          "Pane": {
+                            "DashboardItemId": 13
+                          }
+                        },
+                        {
+                          "Size": 1,
+                          "Pane": {
+                            "DashboardItemId": 14
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "Size": 1.3814,
+                  "Pane": {
+                    "Split": {
+                      "Direction": 1,
+                      "Panes": [
+                        {
+                          "Size": 1.0546,
+                          "Pane": {
+                            "DashboardItemId": 8
+                          }
+                        },
+                        {
+                          "Size": 0.9454,
+                          "Pane": {
+                            "DashboardItemId": 9
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Items": [
+            {
+              "DashboardItemId": 8,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-1"
+              }
+            },
+            {
+              "DashboardItemId": 9,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-2"
+              }
+            },
+            {
+              "DashboardItemId": 11,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-3"
+              }
+            },
+            {
+              "DashboardItemId": 12,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-4"
+              }
+            },
+            {
+              "DashboardItemId": 13,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-5"
+              }
+            },
+            {
+              "DashboardItemId": 14,
+              "ShowHeader": true,
+              "ViewReference": {
+                "EntityName": "RgOrderDetail",
+                "ViewType": 3,
+                "ExportKey": "c-6"
+              }
+            }
+          ]
+        }
+      },
+      "ChartSettings": [
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Sum",
+                "Alias": "NetRevenue"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Product_Category_CategoryName"
+              }
+            ],
+            "SubGroups": []
+          },
+          "SeriesType": 3,
+          "ShowDataLabels": true,
+          "Legend": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-1",
+          "SettingsName": "Net Revenue by Product Category (1997)",
+          "Remark": "Shows total net revenue grouped by product category for orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Sum",
+                "Alias": "NetRevenue"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Order_Customer_Country"
+              }
+            ],
+            "SubGroups": []
+          },
+          "SeriesType": 3,
+          "ShowDataLabels": true,
+          "Legend": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-2",
+          "SettingsName": "Net Revenue by Customer Country (1997)",
+          "Remark": "Shows total net revenue grouped by customer country for orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Sum",
+                "Sort": -1,
+                "Alias": "NetRevenue"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Product_ProductName"
+              }
+            ],
+            "SubGroups": [],
+            "Take": 5
+          },
+          "SeriesType": 1,
+          "Height": 374,
+          "Width": 1324,
+          "ShowDataLabels": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-3",
+          "SettingsName": "Top 5 Products by Net Revenue (1997)",
+          "Remark": "Shows the five products with the highest total net revenue from orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Count",
+                "Sort": -1,
+                "Alias": "Count"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Product_ProductName"
+              }
+            ],
+            "SubGroups": [],
+            "Take": 5
+          },
+          "SeriesType": 1,
+          "ShowDataLabels": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-4",
+          "SettingsName": "Top 5 Products by Order Line Count (1997)",
+          "Remark": "Shows the five products that appear most often in order lines for orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Sum",
+                "Sort": -1,
+                "Alias": "NetRevenue"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Order_Customer_CompanyName"
+              }
+            ],
+            "SubGroups": [],
+            "Take": 5
+          },
+          "SeriesType": 1,
+          "ShowDataLabels": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-5",
+          "SettingsName": "Top 5 Customer Companies by Net Revenue (1997)",
+          "Remark": "Shows the five customer companies with the highest total net revenue from orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "AggregationSettings": {
+            "Columns": [
+              {
+                "Aggregate": "Sum",
+                "Sort": -1,
+                "Alias": "NetRevenue"
+              }
+            ],
+            "Groups": [
+              {
+                "Alias": "Order_Customer_Country"
+              }
+            ],
+            "SubGroups": [],
+            "Take": 5
+          },
+          "SeriesType": 1,
+          "ShowDataLabels": true,
+          "Palette": "RGF Default",
+          "ExportKey": "c-6",
+          "SettingsName": "Top 5 Customer Countries by Net Revenue (1997)",
+          "Remark": "Shows the five customer countries with the highest total net revenue from orders placed in 1997.",
+          "ParentGridSettings": {
+            "Conditions": [
+              {
+                "LogicalOperator": 1,
+                "QueryOperator": 9,
+                "Param1": "1997-01-01T00:00:00",
+                "Param2": "1997-12-31T00:00:00",
+                "Alias": "Order_OrderDate"
+              }
+            ]
+          }
+        }
+      ],
+      "GridSettings": []
+    }
+  ]
+}

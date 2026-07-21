@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="10.0.10" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('$(LocalRgfHostProject)')">
+    <ProjectReference Include="$(LocalRgfHostProject)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfHostProject)')">
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RGFDemo.BlazorApp.Client\RGFDemo.BlazorApp.Client.csproj" />
+  </ItemGroup>
+
+</Project>

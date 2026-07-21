@@ -1,0 +1,19 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.CustomerCustomerDemo",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Customer Customer Demo"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerCustomerDemo",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Customer Customer Demos"
+      }
+    }
+  ]
+}

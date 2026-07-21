@@ -1,0 +1,61 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Category",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Category"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Categories"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category",
+      "Key": "CategoryName",
+      "Translations": {
+        "eng": "Category Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category.Tooltip",
+      "Key": "CategoryName",
+      "Translations": {
+        "eng": "Name of the category used to identify it in the user interface."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category",
+      "Key": "Description",
+      "Translations": {
+        "eng": "Description"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category.Tooltip",
+      "Key": "Description",
+      "Translations": {
+        "eng": "Optional descriptive text for the category."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category",
+      "Key": "Picture",
+      "Translations": {
+        "eng": "Picture"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Category.Tooltip",
+      "Key": "Picture",
+      "Translations": {
+        "eng": "Optional image or binary picture data for the category."
+      }
+    }
+  ]
+}

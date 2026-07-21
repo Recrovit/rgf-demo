@@ -1,0 +1,190 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10008,
+      "EntityName": "RgOrderDetail",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrderDetail, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.OrderDetail._EntityName",
+      "EntityComment": "Stores the line items for customer orders, including quantity, unit price, and discount. Each record belongs to one order and one product. This entity captures the products included in each order.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10087,
+          "EntityId": 10008,
+          "ColName": "OrderDetailId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10088,
+          "EntityId": 10008,
+          "ColName": "Order",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10008,
+              "PropertyId": 10088,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "OrderId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10089,
+          "EntityId": 10008,
+          "ColName": "Order.OrderId",
+          "Alias": "Order_OrderId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder"
+        },
+        {
+          "PropertyId": 10090,
+          "EntityId": 10008,
+          "ColName": "OrderId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10091,
+          "EntityId": 10008,
+          "ColName": "Product",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10009,
+          "MigrEntityBaseName": "RgProduct",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10008,
+              "PropertyId": 10091,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ProductId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10092,
+          "EntityId": 10008,
+          "ColName": "Product.ProductName",
+          "Alias": "Product_ProductName",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.ProductName",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "EntityBase": 10009,
+          "MigrEntityBaseName": "RgProduct"
+        },
+        {
+          "PropertyId": 10093,
+          "EntityId": 10008,
+          "ColName": "ProductId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10094,
+          "EntityId": 10008,
+          "ColName": "UnitPrice",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.UnitPrice",
+          "ColPos": 2,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65538,
+          "PropertyComment": "Stores the unit price applied to the product in the order line."
+        },
+        {
+          "PropertyId": 10095,
+          "EntityId": 10008,
+          "ColName": "Quantity",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.Quantity",
+          "ColPos": 3,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65539,
+          "PropertyComment": "Stores the quantity of product units included in the order line."
+        },
+        {
+          "PropertyId": 10096,
+          "EntityId": 10008,
+          "ColName": "Discount",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.Discount",
+          "ColPos": 4,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65540,
+          "PropertyComment": "Stores the discount applied to the order line as a fractional value."
+        },
+        {
+          "PropertyId": 10097,
+          "EntityId": 10008,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10008,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.OrderDetail.Tooltip",
+          "IsClientParam": true
+        },
+        {
+          "EntityId": 10008,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "OrderDetailId,Discount,Discount"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Order Detail"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Order Details"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "UnitPrice",
+      "Translations": {
+        "eng": "Unit Price"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "UnitPrice",
+      "Translations": {
+        "eng": "Price charged for a single unit of the product."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "Quantity",
+      "Translations": {
+        "eng": "Quantity"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "Quantity",
+      "Translations": {
+        "eng": "Number of units ordered for the product."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "Discount",
+      "Translations": {
+        "eng": "Discount"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "Discount",
+      "Translations": {
+        "eng": "Discount rate applied to the order line."
+      }
+    }
+  ]
+}

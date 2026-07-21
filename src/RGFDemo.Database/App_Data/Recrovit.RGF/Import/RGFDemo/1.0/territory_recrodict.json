@@ -1,0 +1,47 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Territory",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Territory"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Territory",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Territories"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Territory",
+      "Key": "TerritoryId",
+      "Translations": {
+        "eng": "Territory ID"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Territory.Tooltip",
+      "Key": "TerritoryId",
+      "Translations": {
+        "eng": "Business identifier of the territory."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Territory",
+      "Key": "TerritoryDescription",
+      "Translations": {
+        "eng": "Territory Description"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Territory.Tooltip",
+      "Key": "TerritoryDescription",
+      "Translations": {
+        "eng": "Descriptive label for the territory."
+      }
+    }
+  ]
+}

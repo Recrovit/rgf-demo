@@ -1,0 +1,117 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Product"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Products"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "ProductName",
+      "Translations": {
+        "eng": "Product Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "ProductName",
+      "Translations": {
+        "eng": "Stores the product name used to identify the item from a business perspective."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "QuantityPerUnit",
+      "Translations": {
+        "eng": "Quantity Per Unit"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "QuantityPerUnit",
+      "Translations": {
+        "eng": "Describes how the product is packaged or measured per unit."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "UnitPrice",
+      "Translations": {
+        "eng": "Unit Price"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "UnitPrice",
+      "Translations": {
+        "eng": "Stores the selling price per unit of the product."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "UnitsInStock",
+      "Translations": {
+        "eng": "Units In Stock"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "UnitsInStock",
+      "Translations": {
+        "eng": "Stores the current quantity available in inventory."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "UnitsOnOrder",
+      "Translations": {
+        "eng": "Units On Order"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "UnitsOnOrder",
+      "Translations": {
+        "eng": "Stores the quantity currently on order from suppliers."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "ReorderLevel",
+      "Translations": {
+        "eng": "Reorder Level"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "ReorderLevel",
+      "Translations": {
+        "eng": "Stores the inventory level at which the product should be reordered."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product",
+      "Key": "Discontinued",
+      "Translations": {
+        "eng": "Discontinued"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Product.Tooltip",
+      "Key": "Discontinued",
+      "Translations": {
+        "eng": "Indicates whether the product is no longer available for ordering."
+      }
+    }
+  ]
+}

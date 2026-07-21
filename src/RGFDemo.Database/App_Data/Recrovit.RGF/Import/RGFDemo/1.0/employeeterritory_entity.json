@@ -1,0 +1,144 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10006,
+      "EntityName": "RgEmployeeTerritory",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgEmployeeTerritory, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.EmployeeTerritory._EntityName",
+      "EntityComment": "Associative entity that maps employees to territories. It is used to represent the many-to-many relationship between employees and the regions they serve. Each record connects one employee with one territory.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10057,
+          "EntityId": 10006,
+          "ColName": "EmployeeTerritoryId",
+          "ColPos": 1,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10058,
+          "EntityId": 10006,
+          "ColName": "Employee",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10006,
+              "PropertyId": 10058,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "EmployeeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10059,
+          "EntityId": 10006,
+          "ColName": "Employee.LastName",
+          "Alias": "Employee_LastName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.LastName",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee"
+        },
+        {
+          "PropertyId": 10060,
+          "EntityId": 10006,
+          "ColName": "EmployeeId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10061,
+          "EntityId": 10006,
+          "ColName": "Territory",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10013,
+          "MigrEntityBaseName": "RgTerritory",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10006,
+              "PropertyId": 10061,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "TerritoryId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10062,
+          "EntityId": 10006,
+          "ColName": "Territory.TerritoryId",
+          "Alias": "Territory_TerritoryId",
+          "ColTitle": "<%%>ScDemo.Northwind.Territory.TerritoryId",
+          "ColPos": 3,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "EntityBase": 10013,
+          "MigrEntityBaseName": "RgTerritory"
+        },
+        {
+          "PropertyId": 10063,
+          "EntityId": 10006,
+          "ColName": "TerritoryId",
+          "ColPos": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10064,
+          "EntityId": 10006,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10006,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.EmployeeTerritory.Tooltip",
+          "IsClientParam": true
+        }
+      ]
+    }
+  ]
+}

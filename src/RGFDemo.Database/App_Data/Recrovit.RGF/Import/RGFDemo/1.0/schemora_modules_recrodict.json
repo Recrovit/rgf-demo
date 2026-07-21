@@ -1,0 +1,12 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "Schemora.Module.ScDemo.Northwind",
+      "Key": "Northwind",
+      "Translations": {
+        "eng": "Northwind"
+      }
+    }
+  ]
+}

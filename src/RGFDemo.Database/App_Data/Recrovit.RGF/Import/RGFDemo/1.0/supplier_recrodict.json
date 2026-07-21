@@ -1,0 +1,173 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Supplier"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Suppliers"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Company Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Main business name used to identify the supplier."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "ContactName",
+      "Translations": {
+        "eng": "Contact Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "ContactName",
+      "Translations": {
+        "eng": "Name of the supplier contact person."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "ContactTitle",
+      "Translations": {
+        "eng": "Contact Title"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "ContactTitle",
+      "Translations": {
+        "eng": "Job title or role of the supplier contact person."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Address"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Street address for the supplier location or mailing address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "City",
+      "Translations": {
+        "eng": "City"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "City",
+      "Translations": {
+        "eng": "City portion of the supplier address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "Region",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "Region",
+      "Translations": {
+        "eng": "Region or state portion of the supplier address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal Code"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal or ZIP code used in the supplier address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country portion of the supplier address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Phone"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Telephone number for contacting the supplier."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "Fax",
+      "Translations": {
+        "eng": "Fax"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "Fax",
+      "Translations": {
+        "eng": "Fax number associated with the supplier."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier",
+      "Key": "HomePage",
+      "Translations": {
+        "eng": "Home Page"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Supplier.Tooltip",
+      "Key": "HomePage",
+      "Translations": {
+        "eng": "Supplier web page or related online information."
+      }
+    }
+  ]
+}

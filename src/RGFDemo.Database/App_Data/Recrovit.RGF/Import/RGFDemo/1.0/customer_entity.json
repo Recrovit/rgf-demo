@@ -1,0 +1,395 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10002,
+      "EntityName": "RgCustomer",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomer, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Customer._EntityName",
+      "EntityComment": "Stores customer master data such as company name and contact details. Customers can place orders and can be linked to demographic classifications. This entity represents the central customer record.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10007,
+          "EntityId": 10002,
+          "ColName": "CustomerId",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.CustomerId",
+          "ColPos": 0,
+          "ListType": 0,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1,
+          "PropertyComment": "Primary key that uniquely identifies each customer record.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10007,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "5",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10008,
+          "EntityId": 10002,
+          "ColName": "RelatedCustomerCustomerDemo",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10003,
+          "MigrEntityBaseName": "RgCustomerCustomerDemo",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10008,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10009,
+          "EntityId": 10002,
+          "ColName": "RelatedOrder",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 3,
+          "FormPos": 1,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10009,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10010,
+          "EntityId": 10002,
+          "ColName": "CompanyName",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.CompanyName",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 2,
+          "PropertyComment": "Stores the customer company name as the main business identifier shown to users.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10010,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "40",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10011,
+          "EntityId": 10002,
+          "ColName": "ContactName",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.ContactName",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 3,
+          "PropertyComment": "Stores the name of the contact person responsible for the customer account.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10011,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10011,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "30",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10012,
+          "EntityId": 10002,
+          "ColName": "ContactTitle",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.ContactTitle",
+          "ColPos": 3,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 4,
+          "PropertyComment": "Stores the professional title or role of the customer contact person.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10012,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10012,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "30",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10013,
+          "EntityId": 10002,
+          "ColName": "Address",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.Address",
+          "ColPos": 4,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 5,
+          "PropertyComment": "Stores the street address for the customer location or mailing address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10013,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10013,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "60",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10014,
+          "EntityId": 10002,
+          "ColName": "City",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.City",
+          "ColPos": 5,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 6,
+          "PropertyComment": "Stores the city portion of the customer's address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10014,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10014,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10015,
+          "EntityId": 10002,
+          "ColName": "Region",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.Region",
+          "ColPos": 6,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 7,
+          "PropertyComment": "Stores the region or state component of the customer's address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10015,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10015,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10016,
+          "EntityId": 10002,
+          "ColName": "PostalCode",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.PostalCode",
+          "ColPos": 7,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 8,
+          "PropertyComment": "Stores the postal or ZIP code used in the customer's address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10016,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10016,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10017,
+          "EntityId": 10002,
+          "ColName": "Country",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.Country",
+          "ColPos": 8,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 9,
+          "PropertyComment": "Stores the country portion of the customer's address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10017,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10017,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10018,
+          "EntityId": 10002,
+          "ColName": "Phone",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.Phone",
+          "ColPos": 9,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 10,
+          "PropertyComment": "Stores the main telephone number for reaching the customer.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10018,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10018,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10019,
+          "EntityId": 10002,
+          "ColName": "Fax",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.Fax",
+          "ColPos": 10,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 11,
+          "PropertyComment": "Stores the fax number associated with the customer.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10002,
+              "PropertyId": 10019,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10002,
+              "PropertyId": 10019,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10020,
+          "EntityId": 10002,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10002,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "CustomerId,CustomerId,CustomerId"
+        }
+      ]
+    }
+  ]
+}

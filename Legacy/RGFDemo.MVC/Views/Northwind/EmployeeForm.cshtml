@@ -1,0 +1,10 @@
+﻿@using Recrovit.RecroGridFramework;
+@using ScDemo.Northwind.Models
+@model RGFormViewModel
+
+@switch (Model.RGProperty.Alias)
+{
+    case "FirstName":
+        @Html.TextBoxFor(d => ((Employee)d.RGDataRec.DataRec).FirstName, new { @class = "rg-cru" })
+        break;
+}

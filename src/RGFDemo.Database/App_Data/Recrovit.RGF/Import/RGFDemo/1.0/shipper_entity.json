@@ -1,0 +1,128 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10011,
+      "EntityName": "RgShipper",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgShipper, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Shipper._EntityName",
+      "EntityComment": "Stores shipping companies used for order delivery. These records are referenced by orders to indicate the carrier. The entity represents external logistics providers.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10118,
+          "EntityId": 10011,
+          "ColName": "ShipperId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10119,
+          "EntityId": 10011,
+          "ColName": "RelatedOrder",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10011,
+              "PropertyId": 10119,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ShipVia"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10120,
+          "EntityId": 10011,
+          "ColName": "CompanyName",
+          "ColTitle": "<%%>ScDemo.Northwind.Shipper.CompanyName",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "PropertyComment": "Stores the shipping company name shown as the main business identifier.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10011,
+              "PropertyId": 10120,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "40",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10121,
+          "EntityId": 10011,
+          "ColName": "Phone",
+          "ColTitle": "<%%>ScDemo.Northwind.Shipper.Phone",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "PropertyComment": "Stores the phone number for contacting the shipping provider.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10011,
+              "PropertyId": 10121,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10011,
+              "PropertyId": 10121,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10122,
+          "EntityId": 10011,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10011,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Shipper.Tooltip",
+          "IsClientParam": true
+        },
+        {
+          "EntityId": 10011,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "ShipperId,CompanyName,CompanyName"
+        }
+      ]
+    }
+  ]
+}

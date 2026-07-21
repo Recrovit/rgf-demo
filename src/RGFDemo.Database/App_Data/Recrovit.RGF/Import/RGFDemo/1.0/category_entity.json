@@ -1,0 +1,143 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10001,
+      "EntityName": "RgCategory",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCategory, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Category._EntityName",
+      "EntityComment": "Stores product categories used to group related products. Each category can have a name, description, and optional picture. It is referenced by products.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10001,
+          "EntityId": 10001,
+          "ColName": "CategoryId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10002,
+          "EntityId": 10001,
+          "ColName": "RelatedProduct",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10009,
+          "MigrEntityBaseName": "RgProduct",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10001,
+              "PropertyId": 10002,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CategoryId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10003,
+          "EntityId": 10001,
+          "ColName": "CategoryName",
+          "ColTitle": "<%%>ScDemo.Northwind.Category.CategoryName",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "PropertyComment": "Human-readable category name used as the logical key for identifying the category from a user's perspective.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10001,
+              "PropertyId": 10003,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10004,
+          "EntityId": 10001,
+          "ColName": "Description",
+          "ColTitle": "<%%>ScDemo.Northwind.Category.Description",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 2,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "PropertyComment": "Additional information describing the purpose or contents of the category.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10001,
+              "PropertyId": 10004,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10005,
+          "EntityId": 10001,
+          "ColName": "Picture",
+          "ColTitle": "<%%>ScDemo.Northwind.Category.Picture",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0,
+          "PropertyComment": "Binary image data associated with the category, used to store an optional picture.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10001,
+              "PropertyId": 10005,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10006,
+          "EntityId": 10001,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10001,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Category.Tooltip",
+          "IsClientParam": true
+        },
+        {
+          "EntityId": 10001,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "CategoryId,CategoryName,CategoryName"
+        }
+      ]
+    }
+  ]
+}

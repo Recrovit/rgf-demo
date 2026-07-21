@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="10.23.26200" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('$(LocalRgfCore)')">
+    <ProjectReference Include="$(LocalRgfCore)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfCore)')">
+    <PackageReference Include="Recrovit.RecroGridFramework.Core" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RGFDemo.Models\RGFDemo.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <None Remove="App_Data\Recrovit.RGF\Import\**\*.css" />
+    <Content Include="App_Data\Recrovit.RGF\Import\**\*.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Update="App_Data\Recrovit.RGF\Import\**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="App_Data\Recrovit.RGF\Import\**\*.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,122 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+		  "EntityId": 10001,
+		  "EntityName": "RgCategory",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCategory, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Category._EntityName",
+		  "EntityComment": "Stores product categories used to group related products. Each category can have a name, description, and optional picture. It is referenced by products."
+		},
+		{
+		  "EntityId": 10002,
+		  "EntityName": "RgCustomer",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomer, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Customer._EntityName",
+		  "EntityComment": "Stores customer master data such as company name and contact details. Customers can place orders and can be linked to demographic classifications. This entity represents the central customer record."
+		},
+		{
+		  "EntityId": 10003,
+		  "EntityName": "RgCustomerCustomerDemo",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomerCustomerDemo, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.CustomerCustomerDemo._EntityName",
+		  "EntityComment": "Associative entity that maps customers to customer demographic categories. It is used to represent the many-to-many relationship between customers and demographic segments. Each record connects one customer with one demographic type."
+		},
+		{
+		  "EntityId": 10004,
+		  "EntityName": "RgCustomerDemographic",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomerDemographic, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.CustomerDemographic._EntityName",
+		  "EntityComment": "Stores customer demographic categories used to classify customers. These demographic definitions are shared across customers through an association table. The records are relatively static and represent reusable classification values."
+		},
+		{
+		  "EntityId": 10005,
+		  "EntityName": "RgEmployee",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgEmployee, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Employee._EntityName",
+		  "EntityComment": "Stores employee records including personal details, contact information, and employment dates. Employees can report to another employee through a hierarchical relationship. They may also be assigned to orders and territories."
+		},
+		{
+		  "EntityId": 10006,
+		  "EntityName": "RgEmployeeTerritory",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgEmployeeTerritory, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.EmployeeTerritory._EntityName",
+		  "EntityComment": "Associative entity that maps employees to territories. It is used to represent the many-to-many relationship between employees and the regions they serve. Each record connects one employee with one territory."
+		},
+		{
+		  "EntityId": 10007,
+		  "EntityName": "RgOrder",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrder, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Order._EntityName",
+		  "EntityComment": "Stores customer orders including dates, freight, and shipping information. Orders are optionally linked to a customer, an employee, and a shipper. This entity represents the order header."
+		},
+		{
+		  "EntityId": 10008,
+		  "EntityName": "RgOrderDetail",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrderDetail, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.OrderDetail._EntityName",
+		  "EntityComment": "Stores the line items for customer orders, including quantity, unit price, and discount. Each record belongs to one order and one product. This entity captures the products included in each order."
+		},
+		{
+		  "EntityId": 10009,
+		  "EntityName": "RgProduct",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgProduct, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Product._EntityName",
+		  "EntityComment": "Stores product master data including pricing, stock levels, and discontinuation status. Each product may be linked to a category and a supplier. This entity represents items available for ordering."
+		},
+		{
+		  "EntityId": 10010,
+		  "EntityName": "RgRegion",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgRegion, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Region._EntityName",
+		  "EntityComment": "Stores geographic regions used to organize territories. Regions act as a parent classification for territories. This entity is a compact reference table."
+		},
+		{
+		  "EntityId": 10011,
+		  "EntityName": "RgShipper",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgShipper, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Shipper._EntityName",
+		  "EntityComment": "Stores shipping companies used for order delivery. These records are referenced by orders to indicate the carrier. The entity represents external logistics providers."
+		},
+		{
+		  "EntityId": 10012,
+		  "EntityName": "RgSupplier",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgSupplier, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Supplier._EntityName",
+		  "EntityComment": "Stores supplier master data including company and contact information. Suppliers provide products and may have optional address and communication details. This entity represents vendors in the supply chain."
+		},
+		{
+		  "EntityId": 10013,
+		  "EntityName": "RgTerritory",
+		  "EntityVersion": "1",
+		  "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgTerritory, EntryAssemblyName",
+		  "Category": 2,
+		  "Title": "<%%>ScDemo.Northwind.Territory._EntityName",
+		  "EntityComment": "Stores sales territories and their descriptions. Each territory belongs to a single region. Employees can be assigned to territories through a linking entity."
+		}
+  ]
+}

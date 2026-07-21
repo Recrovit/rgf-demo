@@ -1,0 +1,159 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Order"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Orders"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "OrderDate",
+      "Translations": {
+        "eng": "Order Date"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "OrderDate",
+      "Translations": {
+        "eng": "Date and time when the order was placed."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "RequiredDate",
+      "Translations": {
+        "eng": "Required Date"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "RequiredDate",
+      "Translations": {
+        "eng": "Date and time by which the order should be fulfilled."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShippedDate",
+      "Translations": {
+        "eng": "Shipped Date"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShippedDate",
+      "Translations": {
+        "eng": "Date and time when the order was shipped."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "Freight",
+      "Translations": {
+        "eng": "Freight"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "Freight",
+      "Translations": {
+        "eng": "Shipping cost charged for the order."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipName",
+      "Translations": {
+        "eng": "Ship Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipName",
+      "Translations": {
+        "eng": "Name of the shipping recipient or destination."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipAddress",
+      "Translations": {
+        "eng": "Ship Address"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipAddress",
+      "Translations": {
+        "eng": "Street address where the order is shipped."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipCity",
+      "Translations": {
+        "eng": "Ship City"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipCity",
+      "Translations": {
+        "eng": "City of the shipping destination."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipRegion",
+      "Translations": {
+        "eng": "Ship Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipRegion",
+      "Translations": {
+        "eng": "Region or state of the shipping destination."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipPostalCode",
+      "Translations": {
+        "eng": "Ship Postal Code"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipPostalCode",
+      "Translations": {
+        "eng": "Postal code for the shipping destination."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order",
+      "Key": "ShipCountry",
+      "Translations": {
+        "eng": "Ship Country"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Order.Tooltip",
+      "Key": "ShipCountry",
+      "Translations": {
+        "eng": "Country of the shipping destination."
+      }
+    }
+  ]
+}

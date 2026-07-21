@@ -1,0 +1,391 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10012,
+      "EntityName": "RgSupplier",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgSupplier, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Supplier._EntityName",
+      "EntityComment": "Stores supplier master data including company and contact information. Suppliers provide products and may have optional address and communication details. This entity represents vendors in the supply chain.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10123,
+          "EntityId": 10012,
+          "ColName": "SupplierId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10124,
+          "EntityId": 10012,
+          "ColName": "RelatedProduct",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10009,
+          "MigrEntityBaseName": "RgProduct",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10124,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "SupplierId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10125,
+          "EntityId": 10012,
+          "ColName": "CompanyName",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.CompanyName",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "PropertyComment": "Stores the supplier company name as the main business identifier shown to users.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10125,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "40",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10126,
+          "EntityId": 10012,
+          "ColName": "ContactName",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.ContactName",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "PropertyComment": "Stores the name of the contact person responsible for the supplier account.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10126,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10126,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "30",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10127,
+          "EntityId": 10012,
+          "ColName": "ContactTitle",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.ContactTitle",
+          "ColPos": 3,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65538,
+          "PropertyComment": "Stores the professional title or role of the supplier contact person.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10127,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10127,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "30",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10128,
+          "EntityId": 10012,
+          "ColName": "Address",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.Address",
+          "ColPos": 4,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65539,
+          "PropertyComment": "Stores the street address for the supplier location or mailing address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10128,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10128,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "60",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10129,
+          "EntityId": 10012,
+          "ColName": "City",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.City",
+          "ColPos": 5,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65540,
+          "PropertyComment": "Stores the city portion of the supplier address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10129,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10129,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10130,
+          "EntityId": 10012,
+          "ColName": "Region",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.Region",
+          "ColPos": 6,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65541,
+          "PropertyComment": "Stores the region or state component of the supplier address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10130,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10130,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10131,
+          "EntityId": 10012,
+          "ColName": "PostalCode",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.PostalCode",
+          "ColPos": 7,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65542,
+          "PropertyComment": "Stores the postal or ZIP code used in the supplier address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10131,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10131,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10132,
+          "EntityId": 10012,
+          "ColName": "Country",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.Country",
+          "ColPos": 8,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65543,
+          "PropertyComment": "Stores the country portion of the supplier address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10132,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10132,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10133,
+          "EntityId": 10012,
+          "ColName": "Phone",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.Phone",
+          "ColPos": 9,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65544,
+          "PropertyComment": "Stores the phone number for contacting the supplier.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10133,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10133,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10134,
+          "EntityId": 10012,
+          "ColName": "Fax",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.Fax",
+          "ColPos": 10,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65545,
+          "PropertyComment": "Stores the fax number associated with the supplier.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10134,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10012,
+              "PropertyId": 10134,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "24",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10135,
+          "EntityId": 10012,
+          "ColName": "HomePage",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.HomePage",
+          "ColPos": 11,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 2,
+          "FormTab": 1,
+          "FormPos": 65546,
+          "PropertyComment": "Stores the supplier home page or related web information.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10012,
+              "PropertyId": 10135,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10136,
+          "EntityId": 10012,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10012,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Supplier.Tooltip",
+          "IsClientParam": true
+        },
+        {
+          "EntityId": 10012,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "SupplierId,CompanyName,CompanyName"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "GrossAmount",
+      "Translations": {
+        "eng": "Gross Amount"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "GrossAmount",
+      "Translations": {
+        "eng": "Amount for the order line before discount, calculated from unit price multiplied by quantity."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "DiscountAmount",
+      "Translations": {
+        "eng": "Discount Amount"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "DiscountAmount",
+      "Translations": {
+        "eng": "Amount deducted from the order line based on the applied discount rate."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail",
+      "Key": "NetRevenue",
+      "Translations": {
+        "eng": "Net Amount"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.OrderDetail.Tooltip",
+      "Key": "NetRevenue",
+      "Translations": {
+        "eng": "Final amount for the order line after the discount is deducted."
+      }
+    }
+  ]
+}

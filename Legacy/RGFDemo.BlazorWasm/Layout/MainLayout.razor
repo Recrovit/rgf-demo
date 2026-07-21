@@ -1,0 +1,83 @@
+﻿@using Recrovit.RecroGridFramework.Client.Blazor.UI.Components
+@inherits LayoutComponentBase
+
+@if (_initialized)
+{
+    <Recrovit.RecroGridFramework.Client.Blazor.Components.RgfComponentWrapper ComponentType="_libraryWrapper" @key="_contentKey">
+        <header>
+            @if (_currentLibrary == "Bootstrap")
+            {
+                <AuthorizeView>
+                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                                     NavbarBreakpoint="lg"
+                                     BrandText="RGF Demo App"
+                                     ShowThemeSelector="true"
+                                     ShowLanguageSelector="true">
+                        <NavbarRightContent>
+                            <div class="login-display">
+                                <LoginDisplay />
+                                <select value="@_currentLibrary" @onchange="OnLibrarySelectionChanged">
+                                    @foreach (var lib in Libraries)
+                                    {
+                                        <option value="@lib">@lib</option>
+                                    }
+                                </select>
+                            </div>
+                        </NavbarRightContent>
+                    </NavbarComponent>
+                </AuthorizeView>
+                <AuthorizeView>
+                    <NotAuthorized>
+                        <div class="topbar">
+                            <div>
+                                <div class="login-display">
+                                    <LoginDisplay />
+                                </div>
+                            </div>
+                        </div>
+                    </NotAuthorized>
+                </AuthorizeView>
+            }
+            else
+            {
+                <div>
+                    <AuthorizeView>@_menu</AuthorizeView>
+                </div>
+                <div class="theme-switcher">
+                    <div>
+                        <div class="login-display">
+                            <LoginDisplay />
+                        </div>
+                        <div>
+                            @if (_themes != null)
+                            {
+                                @_themes
+                            }
+                        </div>
+                        <div class="lib">
+                            <select value="@_currentLibrary" @onchange="OnLibrarySelectionChanged">
+                                @foreach (var lib in Libraries)
+                                {
+                                    <option value="@lib">@lib</option>
+                                }
+                            </select>
+                            <select value="@_recroSec.UserLanguage" @onchange="(args) => _recroSec.SetUserLanguageAsync(args.Value?.ToString())">
+                                @foreach (var language in _recroDict.Languages)
+                                {
+                                    <option value="@language.Key">@language.Value</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            }
+        </header>
+        <div>
+            <main>
+                <article class="content">
+                    @Body
+                </article>
+            </main>
+        </div>
+    </Recrovit.RecroGridFramework.Client.Blazor.Components.RgfComponentWrapper>
+}

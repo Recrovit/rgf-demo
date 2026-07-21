@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>
+    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>Owner</Company>
+    <Product>RGFDemo</Product>
+    <Version>10.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--<DefineConstants>$(DefineConstants);DevExpressEnabled</DefineConstants>-->
+    <!--<DefineConstants>$(DefineConstants);TelerikEnabled</DefineConstants>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.10" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="10.0.10" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.RadzenUI" Version="10.2.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.SyncfusionUI" Version="10.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RGFDemo.Shared\RGFDemo.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('$(LocalRgfClientUiProject)')">
+    <ProjectReference Include="$(LocalRgfClientUiProject)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfClientUiProject)')">
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.UI" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(DefineConstants.Contains('DevExpressEnabled'))">
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.DevExpressUI" Version="10.2.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(DefineConstants.Contains('TelerikEnabled'))">
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.TelerikUI" Version="10.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\appsettings.Development.json">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\appsettings.Production.json" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

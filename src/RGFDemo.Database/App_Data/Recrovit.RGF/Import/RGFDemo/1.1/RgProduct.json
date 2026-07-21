@@ -1,0 +1,470 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10009,
+      "EntityName": "RgProduct",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgProduct, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Product._EntityName",
+      "EntityComment": "Stores product master data including pricing, stock levels, and discontinuation status. Each product may be linked to a category and a supplier. This entity represents items available for ordering.",
+      "RecroGrid_Options": [
+        {
+          "Id": 10379,
+          "EntityId": 10009,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "ProductId,ProductName,ProductName"
+        },
+        {
+          "Id": 10451,
+          "EntityId": 10009,
+          "OptionKey": "RGO_ItemsPerPage",
+          "OptionValue": "10",
+          "IsClientParam": true
+        },
+        {
+          "Id": 10378,
+          "EntityId": 10009,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Product.Tooltip",
+          "IsClientParam": true
+        }
+      ],
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10098,
+          "EntityId": 10009,
+          "ColName": "ProductId",
+          "ColPos": 2,
+          "ColWidth": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65535,
+          "RecroGrid_Options": [
+            {
+              "Id": 10450,
+              "EntityId": 10009,
+              "PropertyId": 10098,
+              "OptionKey": "RGO_Sort",
+              "OptionValue": "1"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10099,
+          "EntityId": 10009,
+          "ColName": "Category",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10001,
+          "MigrEntityBaseName": "RgCategory",
+          "RecroGrid_Options": [
+            {
+              "Id": 10380,
+              "EntityId": 10009,
+              "PropertyId": 10099,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CategoryId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10100,
+          "EntityId": 10009,
+          "ColName": "Category.CategoryId",
+          "Alias": "Category_CategoryId",
+          "ColTitle": "<%%>ScDemo.Northwind.Category.CategoryName",
+          "ColPos": 3,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 4,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65536,
+          "EntityBase": 10001,
+          "MigrEntityBaseName": "RgCategory",
+          "RecroGrid_Options": [
+            {
+              "Id": 10382,
+              "EntityId": 10009,
+              "PropertyId": 10100,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10381,
+              "EntityId": 10009,
+              "PropertyId": 10100,
+              "OptionKey": "RGO_Tooltip",
+              "OptionValue": "<%%>ScDemo.Northwind.Category.Tooltip.CategoryName",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10144,
+          "EntityId": 10009,
+          "ColName": "Category.Picture",
+          "Alias": "Category_Picture",
+          "ColPos": 4,
+          "ColWidth": 0,
+          "ListType": 4,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 11,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10001,
+          "MigrEntityBaseName": "RgCategory",
+          "RecroGrid_Options": [
+            {
+              "Id": 10437,
+              "EntityId": 10009,
+              "PropertyId": 10144,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Category/10005",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10101,
+          "EntityId": 10009,
+          "ColName": "CategoryId",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "RecroGrid_Options": [
+            {
+              "Id": 10383,
+              "EntityId": 10009,
+              "PropertyId": 10101,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10112,
+          "EntityId": 10009,
+          "ColName": "Discontinued",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.Discontinued",
+          "ColPos": 8,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 3,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65544,
+          "PropertyComment": "Indicates whether the product is no longer available for ordering."
+        },
+        {
+          "PropertyId": 10106,
+          "EntityId": 10009,
+          "ColName": "ProductName",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.ProductName",
+          "ColPos": 1,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65538,
+          "PropertyComment": "Stores the product name used to identify the item from a business perspective.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10388,
+              "EntityId": 10009,
+              "PropertyId": 10106,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "40",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10107,
+          "EntityId": 10009,
+          "ColName": "QuantityPerUnit",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.QuantityPerUnit",
+          "ColPos": 5,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65539,
+          "PropertyComment": "Describes how the product is packaged or measured per unit.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10390,
+              "EntityId": 10009,
+              "PropertyId": 10107,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "20",
+              "IsClientParam": true
+            },
+            {
+              "Id": 10389,
+              "EntityId": 10009,
+              "PropertyId": 10107,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10105,
+          "EntityId": 10009,
+          "ColName": "RelatedOrderDetail",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormGroup": 0,
+          "FormPos": 1,
+          "EntityBase": 10008,
+          "MigrEntityBaseName": "RgOrderDetail",
+          "RecroGrid_Options": [
+            {
+              "Id": 10387,
+              "EntityId": 10009,
+              "PropertyId": 10105,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ProductId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10111,
+          "EntityId": 10009,
+          "ColName": "ReorderLevel",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.ReorderLevel",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65543,
+          "PropertyComment": "Stores the inventory level at which the product should be reordered.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10394,
+              "EntityId": 10009,
+              "PropertyId": 10111,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10113,
+          "EntityId": 10009,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        },
+        {
+          "PropertyId": 10102,
+          "EntityId": 10009,
+          "ColName": "Supplier",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10012,
+          "MigrEntityBaseName": "RgSupplier",
+          "RecroGrid_Options": [
+            {
+              "Id": 10384,
+              "EntityId": 10009,
+              "PropertyId": 10102,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "SupplierId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10103,
+          "EntityId": 10009,
+          "ColName": "Supplier.CompanyName",
+          "Alias": "Supplier_CompanyName",
+          "ColTitle": "<%%>ScDemo.Northwind.Supplier.CompanyName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65537,
+          "EntityBase": 10012,
+          "MigrEntityBaseName": "RgSupplier",
+          "RecroGrid_Options": [
+            {
+              "Id": 10385,
+              "EntityId": 10009,
+              "PropertyId": 10103,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10104,
+          "EntityId": 10009,
+          "ColName": "SupplierId",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "RecroGrid_Options": [
+            {
+              "Id": 10386,
+              "EntityId": 10009,
+              "PropertyId": 10104,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10108,
+          "EntityId": 10009,
+          "ColName": "UnitPrice",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.UnitPrice",
+          "ColPos": 6,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65540,
+          "PropertyComment": "Stores the selling price per unit of the product.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10391,
+              "EntityId": 10009,
+              "PropertyId": 10108,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10109,
+          "EntityId": 10009,
+          "ColName": "UnitsInStock",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.UnitsInStock",
+          "ColPos": 7,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65541,
+          "PropertyComment": "Stores the current quantity available in inventory.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10392,
+              "EntityId": 10009,
+              "PropertyId": 10109,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10110,
+          "EntityId": 10009,
+          "ColName": "UnitsOnOrder",
+          "ColTitle": "<%%>ScDemo.Northwind.Product.UnitsOnOrder",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormGroup": 0,
+          "FormPos": 65542,
+          "PropertyComment": "Stores the quantity currently on order from suppliers.",
+          "RecroGrid_Options": [
+            {
+              "Id": 10393,
+              "EntityId": 10009,
+              "PropertyId": 10110,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

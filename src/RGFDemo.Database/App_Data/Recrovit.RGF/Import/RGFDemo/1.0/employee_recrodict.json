@@ -1,0 +1,243 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Employee"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Employees"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "LastName",
+      "Translations": {
+        "eng": "Last Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "LastName",
+      "Translations": {
+        "eng": "Employee family name used for display and identification."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "FirstName",
+      "Translations": {
+        "eng": "First Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "FirstName",
+      "Translations": {
+        "eng": "Employee given name."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Title",
+      "Translations": {
+        "eng": "Title"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Title",
+      "Translations": {
+        "eng": "Job title of the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "TitleOfCourtesy",
+      "Translations": {
+        "eng": "Title Of Courtesy"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "TitleOfCourtesy",
+      "Translations": {
+        "eng": "Courtesy title used when addressing the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "BirthDate",
+      "Translations": {
+        "eng": "Birth Date"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "BirthDate",
+      "Translations": {
+        "eng": "Employee date of birth."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "HireDate",
+      "Translations": {
+        "eng": "Hire Date"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "HireDate",
+      "Translations": {
+        "eng": "Date when the employee was hired."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Address"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Street address for the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "City",
+      "Translations": {
+        "eng": "City"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "City",
+      "Translations": {
+        "eng": "City where the employee resides."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Region",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Region",
+      "Translations": {
+        "eng": "Region or state component of the address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal Code"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal or ZIP code of the employee address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country where the employee resides."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "HomePhone",
+      "Translations": {
+        "eng": "Home Phone"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "HomePhone",
+      "Translations": {
+        "eng": "Main home telephone number of the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Extension",
+      "Translations": {
+        "eng": "Extension"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Extension",
+      "Translations": {
+        "eng": "Telephone extension for the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Photo",
+      "Translations": {
+        "eng": "Photo"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Photo",
+      "Translations": {
+        "eng": "Binary image data associated with the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "Notes",
+      "Translations": {
+        "eng": "Notes"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "Notes",
+      "Translations": {
+        "eng": "Additional notes about the employee."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "PhotoPath",
+      "Translations": {
+        "eng": "Photo Path"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Employee.Tooltip",
+      "Key": "PhotoPath",
+      "Translations": {
+        "eng": "File path or URL for the employee photo."
+      }
+    }
+  ]
+}

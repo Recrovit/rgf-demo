@@ -1,0 +1,47 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Customer Demographic"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Customer Demographics"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic",
+      "Key": "CustomerTypeId",
+      "Translations": {
+        "eng": "Customer Type ID"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic.Tooltip",
+      "Key": "CustomerTypeId",
+      "Translations": {
+        "eng": "Unique customer demographic code used to identify the demographic category."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic",
+      "Key": "CustomerDesc",
+      "Translations": {
+        "eng": "Customer Description"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.CustomerDemographic.Tooltip",
+      "Key": "CustomerDesc",
+      "Translations": {
+        "eng": "Optional description of the customer demographic category."
+      }
+    }
+  ]
+}

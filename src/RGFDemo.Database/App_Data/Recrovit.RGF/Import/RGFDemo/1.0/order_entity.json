@@ -1,0 +1,522 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10007,
+      "EntityName": "RgOrder",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrder, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Order._EntityName",
+      "EntityComment": "Stores customer orders including dates, freight, and shipping information. Orders are optionally linked to a customer, an employee, and a shipper. This entity represents the order header.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10065,
+          "EntityId": 10007,
+          "ColName": "OrderId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10066,
+          "EntityId": 10007,
+          "ColName": "Customer",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10066,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10067,
+          "EntityId": 10007,
+          "ColName": "Customer.CustomerId",
+          "Alias": "Customer_CustomerId",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.CustomerId",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer"
+        },
+        {
+          "PropertyId": 10068,
+          "EntityId": 10007,
+          "ColName": "CustomerId",
+          "ColPos": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10069,
+          "EntityId": 10007,
+          "ColName": "Employee",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10069,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "EmployeeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10070,
+          "EntityId": 10007,
+          "ColName": "Employee.LastName",
+          "Alias": "Employee_LastName",
+          "ColTitle": "<%%>ScDemo.Northwind.Employee.LastName",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10070,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10071,
+          "EntityId": 10007,
+          "ColName": "EmployeeId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10071,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10072,
+          "EntityId": 10007,
+          "ColName": "Shipper",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10011,
+          "MigrEntityBaseName": "RgShipper",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10072,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "ShipVia"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10073,
+          "EntityId": 10007,
+          "ColName": "Shipper.CompanyName",
+          "Alias": "Shipper_CompanyName",
+          "ColTitle": "<%%>ScDemo.Northwind.Shipper.CompanyName",
+          "ColPos": 3,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65538,
+          "EntityBase": 10011,
+          "MigrEntityBaseName": "RgShipper",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10073,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10074,
+          "EntityId": 10007,
+          "ColName": "ShipVia",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10074,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10075,
+          "EntityId": 10007,
+          "ColName": "RelatedOrderDetail",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10008,
+          "MigrEntityBaseName": "RgOrderDetail",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10075,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "OrderId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10076,
+          "EntityId": 10007,
+          "ColName": "OrderDate",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.OrderDate",
+          "ColPos": 4,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 6,
+          "FormTab": 1,
+          "FormPos": 65539,
+          "PropertyComment": "Stores the date and time the order was created.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10076,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10077,
+          "EntityId": 10007,
+          "ColName": "RequiredDate",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.RequiredDate",
+          "ColPos": 5,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 6,
+          "FormTab": 1,
+          "FormPos": 65540,
+          "PropertyComment": "Stores the requested delivery deadline for the order.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10077,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10078,
+          "EntityId": 10007,
+          "ColName": "ShippedDate",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShippedDate",
+          "ColPos": 6,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 6,
+          "FormTab": 1,
+          "FormPos": 65541,
+          "PropertyComment": "Stores the date and time the order was dispatched to the shipper.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10078,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10079,
+          "EntityId": 10007,
+          "ColName": "Freight",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.Freight",
+          "ColPos": 7,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65542,
+          "PropertyComment": "Stores the freight charge associated with shipping the order.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10079,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10080,
+          "EntityId": 10007,
+          "ColName": "ShipName",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipName",
+          "ColPos": 8,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65543,
+          "PropertyComment": "Stores the name used for the shipping destination on the order.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10080,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10080,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "40",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10081,
+          "EntityId": 10007,
+          "ColName": "ShipAddress",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipAddress",
+          "ColPos": 9,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65544,
+          "PropertyComment": "Stores the street address of the shipping destination for the order.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10081,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10081,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "60",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10082,
+          "EntityId": 10007,
+          "ColName": "ShipCity",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipCity",
+          "ColPos": 10,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65545,
+          "PropertyComment": "Stores the city part of the shipping address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10082,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10082,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10083,
+          "EntityId": 10007,
+          "ColName": "ShipRegion",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipRegion",
+          "ColPos": 11,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65546,
+          "PropertyComment": "Stores the region or state part of the shipping address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10083,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10083,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10084,
+          "EntityId": 10007,
+          "ColName": "ShipPostalCode",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipPostalCode",
+          "ColPos": 12,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65547,
+          "PropertyComment": "Stores the postal or ZIP code of the shipping address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10084,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10084,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10085,
+          "EntityId": 10007,
+          "ColName": "ShipCountry",
+          "ColTitle": "<%%>ScDemo.Northwind.Order.ShipCountry",
+          "ColPos": 13,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65548,
+          "PropertyComment": "Stores the country part of the shipping address.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10007,
+              "PropertyId": 10085,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            },
+            {
+              "EntityId": 10007,
+              "PropertyId": 10085,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "15",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10086,
+          "EntityId": 10007,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10007,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.Order.Tooltip",
+          "IsClientParam": true
+        }
+      ]
+    }
+  ]
+}

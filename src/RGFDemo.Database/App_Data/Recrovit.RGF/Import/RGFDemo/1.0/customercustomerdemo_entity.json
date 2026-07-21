@@ -1,0 +1,144 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10003,
+      "EntityName": "RgCustomerCustomerDemo",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomerCustomerDemo, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.CustomerCustomerDemo._EntityName",
+      "EntityComment": "Associative entity that maps customers to customer demographic categories. It is used to represent the many-to-many relationship between customers and demographic segments. Each record connects one customer with one demographic type.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10021,
+          "EntityId": 10003,
+          "ColName": "CustomerCustomerDemoId",
+          "ColPos": 1,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 10022,
+          "EntityId": 10003,
+          "ColName": "Customer",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10003,
+              "PropertyId": 10022,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10023,
+          "EntityId": 10003,
+          "ColName": "Customer.CustomerId",
+          "Alias": "Customer_CustomerId",
+          "ColTitle": "<%%>ScDemo.Northwind.Customer.CustomerId",
+          "ColPos": 2,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65536,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer"
+        },
+        {
+          "PropertyId": 10024,
+          "EntityId": 10003,
+          "ColName": "CustomerId",
+          "ColPos": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10025,
+          "EntityId": 10003,
+          "ColName": "CustomerDemographic",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10004,
+          "MigrEntityBaseName": "RgCustomerDemographic",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10003,
+              "PropertyId": 10025,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerTypeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10026,
+          "EntityId": 10003,
+          "ColName": "CustomerDemographic.CustomerTypeId",
+          "Alias": "CustomerDemographic_CustomerTypeId",
+          "ColTitle": "<%%>ScDemo.Northwind.CustomerDemographic.CustomerTypeId",
+          "ColPos": 3,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65537,
+          "EntityBase": 10004,
+          "MigrEntityBaseName": "RgCustomerDemographic"
+        },
+        {
+          "PropertyId": 10027,
+          "EntityId": 10003,
+          "ColName": "CustomerTypeId",
+          "ColPos": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10028,
+          "EntityId": 10003,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10003,
+          "OptionKey": "RGO_Tooltip",
+          "OptionValue": "ScDemo.Northwind.CustomerCustomerDemo.Tooltip",
+          "IsClientParam": true
+        }
+      ]
+    }
+  ]
+}

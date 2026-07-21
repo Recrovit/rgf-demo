@@ -1,0 +1,19 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.EmployeeTerritory",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Employee Territory"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.EmployeeTerritory",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Employee Territories"
+      }
+    }
+  ]
+}

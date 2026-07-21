@@ -1,0 +1,47 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Shipper",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Shipper"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Shipper",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Shippers"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Shipper",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Company Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Shipper.Tooltip",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Name of the shipping company used to identify it to users."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Shipper",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Phone"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Shipper.Tooltip",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Contact phone number for the shipping company."
+      }
+    }
+  ]
+}

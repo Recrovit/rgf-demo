@@ -1,0 +1,173 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Customer"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Customers"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "CustomerId",
+      "Translations": {
+        "eng": "Customer ID"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "CustomerId",
+      "Translations": {
+        "eng": "Unique customer identifier used to identify the customer record."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Company Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "CompanyName",
+      "Translations": {
+        "eng": "Official company name of the customer."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "ContactName",
+      "Translations": {
+        "eng": "Contact Name"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "ContactName",
+      "Translations": {
+        "eng": "Name of the primary contact person at the customer."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "ContactTitle",
+      "Translations": {
+        "eng": "Contact Title"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "ContactTitle",
+      "Translations": {
+        "eng": "Job title of the customer contact person."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Address"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "Address",
+      "Translations": {
+        "eng": "Street address or mailing address of the customer."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "City",
+      "Translations": {
+        "eng": "City"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "City",
+      "Translations": {
+        "eng": "City where the customer is located."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "Region",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "Region",
+      "Translations": {
+        "eng": "State, province, or region for the customer address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal Code"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "PostalCode",
+      "Translations": {
+        "eng": "Postal or ZIP code for the customer address."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "Country",
+      "Translations": {
+        "eng": "Country where the customer is located."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Phone"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "Phone",
+      "Translations": {
+        "eng": "Primary phone number for the customer."
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer",
+      "Key": "Fax",
+      "Translations": {
+        "eng": "Fax"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Customer.Tooltip",
+      "Key": "Fax",
+      "Translations": {
+        "eng": "Fax number for the customer, if available."
+      }
+    }
+  ]
+}

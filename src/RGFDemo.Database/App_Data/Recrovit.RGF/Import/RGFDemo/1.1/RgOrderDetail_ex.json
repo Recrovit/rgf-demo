@@ -1,0 +1,178 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10008,
+      "EntityName": "RgOrderDetail",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrderDetail, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.OrderDetail._EntityName",
+      "EntityComment": "Stores the line items for customer orders, including quantity, unit price, and discount. Each record belongs to one order and one product. This entity captures the products included in each order.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10152,
+          "EntityId": 10008,
+          "ColName": "Order.OrderDate",
+          "Alias": "Order_OrderDate",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 2,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 5,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "Id": 10433,
+              "EntityId": 10008,
+              "PropertyId": 10152,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Order/10076",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10153,
+          "EntityId": 10008,
+          "ColName": "NSQL:EntityBase.OrderMonth",
+          "Alias": "Order_OrderMonth",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 10,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10007,
+          "MigrEntityBaseName": "RgOrder",
+          "RecroGrid_Options": [
+            {
+              "Id": 10434,
+              "EntityId": 10008,
+              "PropertyId": 10153,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Order/10151",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10158,
+          "EntityId": 10008,
+          "ColName": "NSQL:EntityBase.EmployeeName",
+          "Alias": "Order_Employee_EmployeeName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10005,
+          "MigrEntityBaseName": "RgEmployee",
+          "RecroGrid_Options": [
+            {
+              "Id": 10441,
+              "EntityId": 10008,
+              "PropertyId": 10158,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Order.Employee/10146",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10174,
+          "EntityId": 10008,
+          "ColName": "Order.Customer.CompanyName",
+          "Alias": "Order_Customer_CompanyName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer",
+          "RecroGrid_Options": [
+            {
+              "Id": 18454,
+              "EntityId": 10008,
+              "PropertyId": 10174,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Order.Customer/10010",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10179,
+          "EntityId": 10008,
+          "ColName": "Product.Category.CategoryName",
+          "Alias": "Product_Category_CategoryName",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10001,
+          "MigrEntityBaseName": "RgCategory",
+          "RecroGrid_Options": [
+            {
+              "Id": 18459,
+              "EntityId": 10008,
+              "PropertyId": 10179,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Product.Category/10003",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10181,
+          "EntityId": 10008,
+          "ColName": "Order.Customer.Country",
+          "Alias": "Order_Customer_Country",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "EntityBase": 10002,
+          "MigrEntityBaseName": "RgCustomer",
+          "RecroGrid_Options": [
+            {
+              "Id": 18461,
+              "EntityId": 10008,
+              "PropertyId": 10181,
+              "OptionKey": "RGO_AutoExternal",
+              "OptionValue": "Order.Customer/10017",
+              "IsClientParam": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

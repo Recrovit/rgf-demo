@@ -1,0 +1,103 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10004,
+      "EntityName": "RgCustomerDemographic",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgCustomerDemographic, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.CustomerDemographic._EntityName",
+      "EntityComment": "Stores customer demographic categories used to classify customers. These demographic definitions are shared across customers through an association table. The records are relatively static and represent reusable classification values.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10029,
+          "EntityId": 10004,
+          "ColName": "CustomerTypeId",
+          "ColTitle": "<%%>ScDemo.Northwind.CustomerDemographic.CustomerTypeId",
+          "ColPos": 0,
+          "ListType": 0,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1,
+          "PropertyComment": "Stores the reusable demographic classification code for customer segmentation.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10004,
+              "PropertyId": 10029,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "10",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10030,
+          "EntityId": 10004,
+          "ColName": "RelatedCustomerCustomerDemo",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10003,
+          "MigrEntityBaseName": "RgCustomerCustomerDemo",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10004,
+              "PropertyId": 10030,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "CustomerTypeId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10031,
+          "EntityId": 10004,
+          "ColName": "CustomerDesc",
+          "ColTitle": "<%%>ScDemo.Northwind.CustomerDemographic.CustomerDesc",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 2,
+          "FormTab": 1,
+          "FormPos": 2,
+          "PropertyComment": "Provides additional details about the demographic segment and its intended use.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10004,
+              "PropertyId": 10031,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10032,
+          "EntityId": 10004,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10004,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "CustomerTypeId,CustomerTypeId,CustomerTypeId"
+        }
+      ]
+    }
+  ]
+}

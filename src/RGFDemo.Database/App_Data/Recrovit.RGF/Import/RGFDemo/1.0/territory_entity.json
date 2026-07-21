@@ -1,0 +1,150 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10013,
+      "EntityName": "RgTerritory",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgTerritory, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Territory._EntityName",
+      "EntityComment": "Stores sales territories and their descriptions. Each territory belongs to a single region. Employees can be assigned to territories through a linking entity.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10137,
+          "EntityId": 10013,
+          "ColName": "TerritoryId",
+          "ColTitle": "<%%>ScDemo.Northwind.Territory.TerritoryId",
+          "ColPos": 0,
+          "ListType": 0,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1,
+          "PropertyComment": "Stores the territory code used to identify the sales territory from a user's perspective.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10013,
+              "PropertyId": 10137,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "20",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10138,
+          "EntityId": 10013,
+          "ColName": "Region",
+          "ColPos": 0,
+          "ListType": 3,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "EntityBase": 10010,
+          "MigrEntityBaseName": "RgRegion",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10013,
+              "PropertyId": 10138,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "RegionId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10139,
+          "EntityId": 10013,
+          "ColName": "Region.RegionId",
+          "Alias": "Region_RegionId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 2,
+          "EntityBase": 10010,
+          "MigrEntityBaseName": "RgRegion"
+        },
+        {
+          "PropertyId": 10140,
+          "EntityId": 10013,
+          "ColName": "RegionId",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0
+        },
+        {
+          "PropertyId": 10141,
+          "EntityId": 10013,
+          "ColName": "RelatedEmployeeTerritory",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10006,
+          "MigrEntityBaseName": "RgEmployeeTerritory",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10013,
+              "PropertyId": 10141,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "TerritoryId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10142,
+          "EntityId": 10013,
+          "ColName": "TerritoryDescription",
+          "ColTitle": "<%%>ScDemo.Northwind.Territory.TerritoryDescription",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 3,
+          "PropertyComment": "Stores the human-readable description of the sales territory.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10013,
+              "PropertyId": 10142,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "50",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10143,
+          "EntityId": 10013,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "EntityId": 10013,
+          "OptionKey": "RGO_DictionaryItems",
+          "OptionValue": "TerritoryId,TerritoryId,TerritoryId"
+        }
+      ]
+    }
+  ]
+}

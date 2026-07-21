@@ -1,0 +1,32 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10007,
+      "EntityName": "RgOrder",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrder, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Order._EntityName",
+      "EntityComment": "Stores customer orders including dates, freight, and shipping information. Orders are optionally linked to a customer, an employee, and a shipper. This entity represents the order header.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10151,
+          "EntityId": 10007,
+          "ColName": "NSQL:TO_CHAR({0}.OrderDate, 'YYYY-MM')",
+          "Alias": "OrderMonth",
+          "ColTitle": "OrderMonth",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        }
+      ]
+    }
+  ]
+}

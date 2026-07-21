@@ -1,0 +1,64 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10008,
+      "EntityName": "RgOrderDetail",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgOrderDetail, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.OrderDetail._EntityName",
+      "EntityComment": "Stores the line items for customer orders, including quantity, unit price, and discount. Each record belongs to one order and one product. This entity captures the products included in each order.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10148,
+          "EntityId": 10008,
+          "ColName": "NSQL:CAST({0}.UnitPrice * {0}.Quantity AS numeric(19, 2))",
+          "Alias": "GrossAmount",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.GrossAmount",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 10,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        },
+        {
+          "PropertyId": 10149,
+          "EntityId": 10008,
+          "ColName": "NSQL:CAST({0}.UnitPrice * {0}.Quantity * {0}.Discount AS numeric(19, 2))",
+          "Alias": "DiscountAmount",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.DiscountAmount",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 10,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        },
+        {
+          "PropertyId": 10150,
+          "EntityId": 10008,
+          "ColName": "NSQL:CAST({0}.UnitPrice * {0}.Quantity * (1 - {0}.Discount) AS numeric(19, 2))",
+          "Alias": "NetRevenue",
+          "ColTitle": "<%%>ScDemo.Northwind.OrderDetail.NetRevenue",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 10,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0
+        }
+      ]
+    }
+  ]
+}

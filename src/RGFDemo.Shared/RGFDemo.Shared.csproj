@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Recrovit.RecroGridFramework.Abstraction" Version="10.3.0" />
+  </ItemGroup>
+
+</Project>

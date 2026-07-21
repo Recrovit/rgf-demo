@@ -1,0 +1,47 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Region",
+      "Key": "_EntityName",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Region",
+      "Key": "_EntityNamePlural",
+      "Translations": {
+        "eng": "Regions"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Region",
+      "Key": "RegionId",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Region.Tooltip",
+      "Key": "RegionId",
+      "Translations": {
+        "eng": "Region"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Region",
+      "Key": "RegionDescription",
+      "Translations": {
+        "eng": "Region Description"
+      }
+    },
+    {
+      "Scope": "ScDemo.Northwind.Region.Tooltip",
+      "Key": "RegionDescription",
+      "Translations": {
+        "eng": "Short description of the geographic region."
+      }
+    }
+  ]
+}

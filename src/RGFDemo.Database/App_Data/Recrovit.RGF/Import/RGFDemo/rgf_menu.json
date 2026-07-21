@@ -1,0 +1,31 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Menu, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "MenuId": 10001,
+      "MenuType": 3,
+      "Title": "RGFDemo",
+      "MenuPos": 1,
+      "AlwayVisible": true
+    },
+    {
+      "MenuId": 10002,
+      "MenuType": 6,
+      "ParentId": 10001,
+      "Title": "Dashboard",
+      "Command": "/rgf/dashboard",
+      "MenuPos": 1,
+      "AlwayVisible": true
+    },
+    {
+      "MenuId": 10003,
+      "MenuType": 3,
+      "ParentId": 10001,
+      "Title": "-linked-",
+      "Command": "",
+      "MenuPos": 101,
+      "AlwayVisible": false,
+      "LinkedId": 100
+    }
+  ]
+}

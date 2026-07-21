@@ -1,0 +1,95 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10010,
+      "EntityName": "RgRegion",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgRegion, EntryAssemblyName",
+      "Category": 2,
+      "Title": "<%%>ScDemo.Northwind.Region._EntityName",
+      "EntityComment": "Stores geographic regions used to organize territories. Regions act as a parent classification for territories. This entity is a compact reference table.",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10114,
+          "EntityId": 10010,
+          "ColName": "RegionId",
+          "ColTitle": "<%%>ScDemo.Northwind.Region.RegionId",
+          "ColPos": 0,
+          "ListType": 1,
+          "IsKey": true,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1,
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10010,
+              "PropertyId": 10114,
+              "OptionKey": "RGO_Nullable",
+              "OptionValue": "True",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10115,
+          "EntityId": 10010,
+          "ColName": "RelatedTerritory",
+          "ColPos": 0,
+          "ListType": 5,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 2,
+          "FormPos": 1,
+          "EntityBase": 10013,
+          "MigrEntityBaseName": "RgTerritory",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10010,
+              "PropertyId": 10115,
+              "OptionKey": "RGO_ForeignKey",
+              "OptionValue": "RegionId"
+            }
+          ]
+        },
+        {
+          "PropertyId": 10116,
+          "EntityId": 10010,
+          "ColName": "RegionDescription",
+          "ColTitle": "<%%>ScDemo.Northwind.Region.RegionDescription",
+          "ColPos": 1,
+          "ListType": 0,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 2,
+          "PropertyComment": "Stores the human-readable description of the region used to classify territories.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10010,
+              "PropertyId": 10116,
+              "OptionKey": "RGO_MaxLength",
+              "OptionValue": "50",
+              "IsClientParam": true
+            }
+          ]
+        },
+        {
+          "PropertyId": 10117,
+          "EntityId": 10010,
+          "ColName": "RowVersion",
+          "ColPos": 0,
+          "ListType": 1,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 0,
+          "FormTab": 0
+        }
+      ]
+    }
+  ]
+}

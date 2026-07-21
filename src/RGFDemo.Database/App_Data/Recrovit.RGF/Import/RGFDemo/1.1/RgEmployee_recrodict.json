@@ -1,0 +1,12 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.RecroDictData, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "Scope": "ScDemo.Northwind.Employee",
+      "Key": "EmployeeName",
+      "Translations": {
+        "eng": "Employee Name"
+      }
+    }
+ ]
+}

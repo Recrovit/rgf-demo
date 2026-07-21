@@ -1,0 +1,25 @@
+BEGIN
+    EXECUTE IMMEDIATE '
+        CREATE TABLE RGFOIDCTOKENCACHE (
+            ID NVARCHAR2(449) NOT NULL,
+            VALUE BLOB NOT NULL,
+            EXPIRESATTIME TIMESTAMP WITH TIME ZONE NOT NULL,
+            SLIDINGEXPIRATIONINSECONDS NUMBER(19) NULL,
+            ABSOLUTEEXPIRATION TIMESTAMP WITH TIME ZONE NULL,
+            CONSTRAINT PK_RGFOIDCTOKENCACHE PRIMARY KEY (ID)
+        )';
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE != -955 THEN
+            RAISE;
+        END IF;
+END;
+/
+
+CREATE OR REPLACE VIEW v_employee AS
+    SELECT
+        CONCAT(CONCAT(e1.FirstName, ' '), e1.LastName) AS EmployeeName,
+        (SELECT COUNT(*) FROM orders WHERE EmployeeID = e1.EmployeeID) AS OrdersCount,
+        e1.*
+    FROM Employees e1;
+/

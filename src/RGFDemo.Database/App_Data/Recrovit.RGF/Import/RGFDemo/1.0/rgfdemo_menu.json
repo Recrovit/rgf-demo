@@ -1,0 +1,129 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Menu, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "MenuId": 10004,
+      "ParentId": 10001,
+      "MenuType": 3,
+      "MenuPos": 10,
+      "Title": "<%%>Schemora.Module.ScDemo.Northwind.Northwind"
+    },
+    {
+      "MenuId": 10005,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 10,
+      "EntityName": "RgCategory_1",
+      "Title": "-rg-category_1",
+      "Command": "/rgf/entity/RgCategory_1"
+    },
+    //{
+    //  "MenuId": 10006,
+    //  "ParentId": 10004,
+    //  "MenuType": 6,
+    //  "MenuPos": 20,
+    //  "EntityName": "RgCustomerCustomerDemo_1",
+    //  "Title": "-rg-customercustomerdemo_1",
+    //  "Command": "/rgf/entity/RgCustomerCustomerDemo_1"
+    //},
+    {
+      "MenuId": 10007,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 30,
+      "EntityName": "RgCustomerDemographic_1",
+      "Title": "-rg-customerdemographic_1",
+      "Command": "/rgf/entity/RgCustomerDemographic_1"
+    },
+    {
+      "MenuId": 10008,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 40,
+      "EntityName": "RgCustomer_1",
+      "Title": "-rg-customer_1",
+      "Command": "/rgf/entity/RgCustomer_1"
+    },
+    {
+      "MenuId": 10009,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 50,
+      "EntityName": "RgEmployeeTerritory_1",
+      "Title": "-rg-employeeterritory_1",
+      "Command": "/rgf/entity/RgEmployeeTerritory_1"
+    },
+    {
+      "MenuId": 10010,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 60,
+      "EntityName": "RgEmployee_1",
+      "Title": "-rg-employee_1",
+      "Command": "/rgf/entity/RgEmployee_1"
+    },
+    {
+      "MenuId": 10011,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 70,
+      "EntityName": "RgOrderDetail_1",
+      "Title": "-rg-orderdetail_1",
+      "Command": "/rgf/entity/RgOrderDetail_1"
+    },
+    {
+      "MenuId": 10012,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 80,
+      "EntityName": "RgOrder_1",
+      "Title": "-rg-order_1",
+      "Command": "/rgf/entity/RgOrder_1"
+    },
+    {
+      "MenuId": 10013,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 90,
+      "EntityName": "RgProduct_1",
+      "Title": "-rg-product_1",
+      "Command": "/rgf/entity/RgProduct_1"
+    },
+    {
+      "MenuId": 10014,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 100,
+      "EntityName": "RgRegion_1",
+      "Title": "-rg-region_1",
+      "Command": "/rgf/entity/RgRegion_1"
+    },
+    {
+      "MenuId": 10015,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 110,
+      "EntityName": "RgShipper_1",
+      "Title": "-rg-shipper_1",
+      "Command": "/rgf/entity/RgShipper_1"
+    },
+    {
+      "MenuId": 10016,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 120,
+      "EntityName": "RgSupplier_1",
+      "Title": "-rg-supplier_1",
+      "Command": "/rgf/entity/RgSupplier_1"
+    },
+    {
+      "MenuId": 10017,
+      "ParentId": 10004,
+      "MenuType": 6,
+      "MenuPos": 130,
+      "EntityName": "RgTerritory_1",
+      "Title": "-rg-territory_1",
+      "Command": "/rgf/entity/RgTerritory_1"
+    }
+  ]
+}

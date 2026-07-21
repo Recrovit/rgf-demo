@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+
+<RgfRootComponent @key="_contentKey">
+    <header class="rgf-page-header">
+        <div class="rgf-navbar-host">
+            <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                             NavbarBreakpoint="lg"
+                             BrandText="RGF Demo App"
+                             ShowThemeSelector="true"
+                             ShowLanguageSelector="true">
+                <NavbarRightContent>
+                    <div class="login-display">
+                        <LoginDisplay />
+                    </div>
+                </NavbarRightContent>
+            </NavbarComponent>
+        </div>
+    </header>
+
+    <main class="rgf-page-main">
+        @Body
+    </main>
+</RgfRootComponent>
+
+@inject IRecroSecService _recroSec
+@code {
+    private int _contentKey;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        _recroSec.LanguageChangedEvent.Subscribe(LanguageChangedAsync);
+    }
+
+    private Task LanguageChangedAsync(DataEventArgs<string> _)
+    {
+        return InvokeAsync(() =>
+        {
+            _contentKey++;
+            StateHasChanged();
+        });
+    }
+}
