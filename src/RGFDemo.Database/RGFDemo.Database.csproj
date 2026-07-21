@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RGF.Demo.Northwind.Common\RGF.Demo.Northwind.Common.csproj" />
+    <ProjectReference Include="..\RGFDemo.Shared\RGFDemo.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('$(LocalRgfCore)')">

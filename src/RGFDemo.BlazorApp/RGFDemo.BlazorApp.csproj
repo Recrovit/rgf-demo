@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RGF.DemoApp.Client\RGF.DemoApp.Client.csproj" />
+    <ProjectReference Include="..\RGFDemo.BlazorApp.Client\RGFDemo.BlazorApp.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('$(LocalRgfHostProject)')">

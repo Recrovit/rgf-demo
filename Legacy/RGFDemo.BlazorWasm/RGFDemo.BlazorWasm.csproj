@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RGF.Demo.Northwind.Common\RGF.Demo.Northwind.Common.csproj" />
+    <ProjectReference Include="..\..\src\RGFDemo.Shared\RGFDemo.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('$(LocalRgfClientUiProject)')">

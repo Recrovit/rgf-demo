@@ -437,4 +437,4 @@ src/Directory.Build.targets
 
 **/wwwroot/rgf/**
 **/Recrovit.RGF.license
-/src/RGF.Demo.IDP/keys
+**/RGF.Demo.IDP/keys

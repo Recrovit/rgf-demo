@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RGF.Demo.Northwind\RGF.Demo.Northwind.csproj" />
+    <ProjectReference Include="..\RGFDemo.Database\RGFDemo.Database.csproj" />
   </ItemGroup>
 
 </Project>
