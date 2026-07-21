@@ -1,4 +1,4 @@
-namespace RGF.Demo.MVC.Models
+namespace RGFDemo.MVC.Models
 {
     public class ErrorViewModel
     {

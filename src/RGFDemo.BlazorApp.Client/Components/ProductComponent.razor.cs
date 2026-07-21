@@ -7,7 +7,7 @@ using Recrovit.RecroGridFramework.Client.Blazor.UI.Components;
 using Recrovit.RecroGridFramework.Client.Events;
 using Recrovit.RecroGridFramework.Client.Handlers;
 
-namespace RGF.DemoApp.Client.Components;
+namespace RGFDemo.BlazorApp.Client.Components;
 
 public partial class ProductComponent : IDisposable
 {

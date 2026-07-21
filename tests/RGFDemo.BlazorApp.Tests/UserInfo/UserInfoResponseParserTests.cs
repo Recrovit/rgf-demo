@@ -1,8 +1,8 @@
 using System.Text.Json;
-using RGF.DemoApp.Features.UserInfo;
+using RGFDemo.BlazorApp.Features.UserInfo;
 using Xunit;
 
-namespace RGF.DemoApp.Tests.UserInfo;
+namespace RGFDemo.BlazorApp.Tests.UserInfo;
 
 public sealed class UserInfoResponseParserTests
 {

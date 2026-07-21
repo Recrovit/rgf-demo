@@ -7,9 +7,9 @@ using Recrovit.AspNetCore.Components.Routing.Models;
 using Recrovit.RecroGridFramework.Client.Blazor;
 using Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect.Configuration;
 using Recrovit.RecroGridFramework.Client.Blazor.UI;
-using RGF.DemoApp.Client.Layout;
-using RGF.DemoApp.Components;
-using RGF.DemoApp.Features.UserInfo;
+using RGFDemo.BlazorApp.Client.Layout;
+using RGFDemo.BlazorApp.Components;
+using RGFDemo.BlazorApp.Features.UserInfo;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
@@ -26,9 +26,9 @@ try
     builder.Services.AddRecrovitComponentRouting(options =>
     {
         options.AddRouteAssembly(typeof(App).Assembly);
-        options.AddRouteAssembly(typeof(RGF.DemoApp.Client._Imports).Assembly);
+        options.AddRouteAssembly(typeof(RGFDemo.BlazorApp.Client._Imports).Assembly);
         options.DefaultLayout = typeof(MainLayout);
-        options.SetNotFoundPage(RecrovitRoutesKind.Host, typeof(RGF.DemoApp.Client.Pages.NotFound));
+        options.SetNotFoundPage(RecrovitRoutesKind.Host, typeof(RGFDemo.BlazorApp.Client.Pages.NotFound));
     });
 
     builder.AddRgfBlazorServerProxyOpenIdConnectRazorComponents();
@@ -78,7 +78,7 @@ try
     await app.Services.InitializeRgfBlazorServerAsync();
     await app.Services.InitializeRgfUIAsync(loadResources: false);
 
-    app.MapRgfBlazorServerProxyOpenIdConnectComponents<App>(typeof(RGF.DemoApp.Client._Imports).Assembly);
+    app.MapRgfBlazorServerProxyOpenIdConnectComponents<App>(typeof(RGFDemo.BlazorApp.Client._Imports).Assembly);
 
     app.MapUserInfoEndpoints();
 

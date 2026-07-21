@@ -2,7 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration;
 using Xunit;
 
-namespace RGF.DemoApp.Tests.UserInfo;
+namespace RGFDemo.BlazorApp.Tests.UserInfo;
 
 public sealed class UserInfoDownstreamConfigurationTests
 {

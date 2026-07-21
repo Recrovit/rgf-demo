@@ -2,7 +2,7 @@
 using Recrovit.RecroGridFramework.Client.Blazor;
 using Syncfusion.Blazor;
 
-namespace RGF.Demo.BlazorWasm;
+namespace RGFDemo.BlazorWasm;
 
 public static class Configure
 {

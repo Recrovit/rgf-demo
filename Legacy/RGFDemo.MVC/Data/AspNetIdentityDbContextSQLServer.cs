@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Recrovit.RecroGridFramework.Data;
 
-namespace RGF.Demo.MVC.Data;
+namespace RGFDemo.MVC.Data;
 
 public class AspNetIdentityDbContextSQLServer : IdentityDbContext
 {

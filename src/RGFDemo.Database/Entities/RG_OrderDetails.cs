@@ -2,10 +2,10 @@
 using Recrovit.RecroGridFramework.Abstraction.Models;
 using Recrovit.RecroGridFramework.Core;
 using Recrovit.RecroGridFramework.Data;
-using RGF.Demo.Northwind.Common.Validation;
 using RGF.Demo.Northwind.Models;
+using ScDemo.Northwind.Validation;
 
-namespace RGF.Demo.Northwind.Entities;
+namespace RGFDemo.Database.Entities;
 
 public partial class RG_OrderDetails : RgfCore<Order_Details>
 {

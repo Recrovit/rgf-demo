@@ -8,9 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Recrovit.RecroGridFramework;
 using Recrovit.RecroGridFramework.Data;
 using Recrovit.RecroGridFramework.Extensions;
-using RGF.Demo.Northwind;
+using RGFDemo.Database;
 
-namespace RGF.Demo.Northwind.Area.RGF.DbModel;
+namespace RGFDemo.Database.Area.RGF.DbModel;
 
 public partial class BaseDbContext : NorthwindDbContext
 {

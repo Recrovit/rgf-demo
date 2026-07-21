@@ -1,7 +1,7 @@
 using System.Text.Json;
-using RGF.DemoApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Models;
 
-namespace RGF.DemoApp.Features.UserInfo;
+namespace RGFDemo.BlazorApp.Features.UserInfo;
 
 public static class UserInfoResponseParser
 {

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.SQLServer
+namespace RGFDemo.Database.Data.Migrations.SQLServer
 {
     [DbContext(typeof(BaseDbContextMigrSQLServer))]
     [Migration("20240731143054_RGF.Demo.Northwind_v1.1")]

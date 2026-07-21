@@ -9,14 +9,14 @@ The RecroGrid Framework components used by these demos are maintained in the [`r
 
 ## Project Overview
 
-- `RGF.Demo.API`: ASP.NET Core Web API host that demonstrates the demo backend and RGF server-side integration.
+- `RGFDemo.WebAPI`: ASP.NET Core Web API host that demonstrates the demo backend and RGF server-side integration.
 - `RGF.Demo.IDP`: Dedicated demo identity provider used for authentication and OpenID Connect scenarios across the solution.
-- `RGF.Demo.Northwind`: Shared Northwind-based demo domain and data access layer used by the server-side sample applications.
-- `RGF.Demo.Northwind.Common`: Common abstractions and shared models consumed by multiple demo clients and hosts.
-- `RGF.DemoApp`: Modern demo host application that showcases OpenID Connect, Blazor, and RGF integration in the current application model.
-- `RGF.DemoApp.Client`: Client-side Blazor WebAssembly application for `RGF.DemoApp`, including the interactive RGF UI experience.
-- `RGF.Demo.BlazorWasm`: Legacy Blazor WebAssembly demo application retained for reference and backward compatibility.
-- `RGF.Demo.MVC`: Legacy ASP.NET Core MVC demo application retained for reference and backward compatibility.
+- `RGFDemo.Database`: Shared Northwind-based demo domain and data access layer used by the server-side sample applications.
+- `RGFDemo.Models`: Common abstractions and shared models consumed by multiple demo clients and hosts.
+- `RGFDemo.BlazorApp`: Modern demo host application that showcases OpenID Connect, Blazor, and RGF integration in the current application model.
+- `RGFDemo.BlazorApp.Client`: Client-side Blazor WebAssembly application for `RGF.DemoApp`, including the interactive RGF UI experience.
+- `RGFDemo.BlazorWasm`: Legacy Blazor WebAssembly demo application retained for reference and backward compatibility.
+- `RGFDemo.MVC`: Legacy ASP.NET Core MVC demo application retained for reference and backward compatibility.
 
 ## Related Packages
 

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Recrovit.RecroGridFramework;
 using Recrovit.RecroGridFramework.Data;
-using RGF.Demo.Northwind.Entities;
+using RGFDemo.Database.Entities;
 
-namespace RGF.Demo.MVC.Controllers
+namespace RGFDemo.MVC.Controllers
 {
     public class NorthwindController : Controller
     {

@@ -1,6 +1,6 @@
 {
-  "name": "RGF.Demo.BlazorWasm",
-  "short_name": "RGF.Demo.BlazorWasm",
+  "name": "RGFDemo.BlazorWasm",
+  "short_name": "RGFDemo.BlazorWasm",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

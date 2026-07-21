@@ -3,8 +3,8 @@ using Recrovit.AspNetCore.Components.Routing.Configuration;
 using Recrovit.RecroGridFramework.Client.Blazor;
 using Recrovit.RecroGridFramework.Client.Blazor.SessionAuth;
 using Recrovit.RecroGridFramework.Client.Blazor.UI;
-using RGF.DemoApp.Client.Components;
-using RGF.DemoApp.Client.Services;
+using RGFDemo.BlazorApp.Client.Components;
+using RGFDemo.BlazorApp.Client.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 

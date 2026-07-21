@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.Oracle
+namespace RGFDemo.Database.Data.Migrations.Oracle
 {
     [DbContext(typeof(BaseDbContextMigrOracle))]
     partial class BaseDbContextMigrOracleModelSnapshot : ModelSnapshot

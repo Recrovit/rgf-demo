@@ -3,7 +3,7 @@ using Recrovit.RecroGridFramework.Core;
 using RGF.Demo.Northwind.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace RGF.Demo.Northwind.Entities;
+namespace RGFDemo.Database.Entities;
 
 public enum DropdownEnumTest
 {

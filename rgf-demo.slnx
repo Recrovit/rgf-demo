@@ -47,6 +47,7 @@
   <Project Path="src/RGFDemo.BlazorApp.Client/RGFDemo.BlazorApp.Client.csproj" />
   <Project Path="src/RGFDemo.BlazorApp/RGFDemo.BlazorApp.csproj" />
   <Project Path="src/RGFDemo.Database/RGFDemo.Database.csproj" />
+  <Project Path="src/RGFDemo.Models/RGFDemo.Models.csproj" />
   <Project Path="src/RGFDemo.Shared/RGFDemo.Shared.csproj" />
   <Project Path="src/RGFDemo.WebAPI/RGFDemo.WebAPI.csproj" />
 </Solution>

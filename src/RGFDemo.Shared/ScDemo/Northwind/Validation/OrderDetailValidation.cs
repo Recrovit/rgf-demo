@@ -3,7 +3,7 @@ using Recrovit.RecroGridFramework.Abstraction.Contracts.UI;
 using Recrovit.RecroGridFramework.Abstraction.Models;
 using System.Globalization;
 
-namespace RGF.Demo.Northwind.Common.Validation;
+namespace ScDemo.Northwind.Validation;
 
 public class OrderDetailValidation
 {

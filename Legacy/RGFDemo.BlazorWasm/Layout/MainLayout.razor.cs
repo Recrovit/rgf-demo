@@ -13,9 +13,9 @@ using Recrovit.RecroGridFramework.Client.Blazor.SyncfusionUI;
 using Recrovit.RecroGridFramework.Client.Blazor.TelerikUI;
 #endif
 using Recrovit.RecroGridFramework.Client.Blazor.UI;
-using RGF.Demo.BlazorWasm.Components;
+using RGFDemo.BlazorWasm.Components;
 
-namespace RGF.Demo.BlazorWasm.Layout;
+namespace RGFDemo.BlazorWasm.Layout;
 
 public partial class MainLayout
 {

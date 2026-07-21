@@ -1,8 +1,8 @@
 using NLog;
 using NLog.Web;
 using Recrovit.RecroGridFramework.Extensions;
-using RGF.Demo.MVC.Data;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
+using RGFDemo.MVC.Data;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");

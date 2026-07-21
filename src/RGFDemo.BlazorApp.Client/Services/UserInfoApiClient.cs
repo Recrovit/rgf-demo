@@ -1,8 +1,8 @@
 using System.Net;
 using System.Net.Http.Json;
-using RGF.DemoApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Models;
 
-namespace RGF.DemoApp.Client.Services;
+namespace RGFDemo.BlazorApp.Client.Services;
 
 public sealed class UserInfoApiClient(HttpClient httpClient) : IUserInfoApiClient
 {

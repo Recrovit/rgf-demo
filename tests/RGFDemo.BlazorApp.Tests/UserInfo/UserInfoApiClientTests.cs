@@ -1,11 +1,11 @@
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
-using RGF.DemoApp.Client.Models;
-using RGF.DemoApp.Client.Services;
+using RGFDemo.BlazorApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Services;
 using Xunit;
 
-namespace RGF.DemoApp.Tests.UserInfo;
+namespace RGFDemo.BlazorApp.Tests.UserInfo;
 
 public sealed class UserInfoApiClientTests
 {

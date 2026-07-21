@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Recrovit.RecroGridFramework.Extensions;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace RGF.Demo.API;
+namespace RGFDemo.WebAPI;
 
 public static class Config
 {

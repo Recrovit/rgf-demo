@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.Oracle
+namespace RGFDemo.Database.Data.Migrations.Oracle
 {
     public partial class RGFNorthwind_v1 : Migration
     {

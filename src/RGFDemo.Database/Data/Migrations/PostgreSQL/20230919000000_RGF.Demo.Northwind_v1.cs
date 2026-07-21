@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.PostgreSQL
+namespace RGFDemo.Database.Data.Migrations.PostgreSQL
 {
     public partial class RGFNorthwind_v1 : Migration
     {

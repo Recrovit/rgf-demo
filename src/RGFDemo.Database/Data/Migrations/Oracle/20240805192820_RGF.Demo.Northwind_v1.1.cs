@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.Oracle
+namespace RGFDemo.Database.Data.Migrations.Oracle
 {
     /// <inheritdoc />
     public partial class RGFDemoNorthwind_v11 : Migration

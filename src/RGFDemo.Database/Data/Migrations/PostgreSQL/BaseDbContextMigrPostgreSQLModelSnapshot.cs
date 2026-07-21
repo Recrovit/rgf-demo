@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.PostgreSQL
+namespace RGFDemo.Database.Data.Migrations.PostgreSQL
 {
     [DbContext(typeof(BaseDbContextMigrPostgreSQL))]
     partial class BaseDbContextMigrPostgreSQLModelSnapshot : ModelSnapshot

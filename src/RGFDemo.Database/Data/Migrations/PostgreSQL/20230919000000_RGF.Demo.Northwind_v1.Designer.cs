@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.PostgreSQL
+namespace RGFDemo.Database.Data.Migrations.PostgreSQL
 {
     [DbContext(typeof(BaseDbContextMigrPostgreSQL))]
     [Migration("20230919000000_RGF.Demo.Northwind_v1")]

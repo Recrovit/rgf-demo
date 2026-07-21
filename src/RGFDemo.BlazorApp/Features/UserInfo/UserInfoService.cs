@@ -1,7 +1,7 @@
 using System.Security.Claims;
-using RGF.DemoApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Models;
 
-namespace RGF.DemoApp.Features.UserInfo;
+namespace RGFDemo.BlazorApp.Features.UserInfo;
 
 public sealed class UserInfoService(UserInfoDownstreamClient downstreamClient)
 {

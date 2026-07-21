@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
-using RGF.Demo.Northwind.Area.RGF.DbModel;
+using RGFDemo.Database.Area.RGF.DbModel;
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.Oracle
+namespace RGFDemo.Database.Data.Migrations.Oracle
 {
     [DbContext(typeof(BaseDbContextMigrOracle))]
     [Migration("20240805192820_RGF.Demo.Northwind_v1.1")]

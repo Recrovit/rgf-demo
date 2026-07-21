@@ -12,15 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RGFDemo.Database\RGFDemo.Database.csproj" />
-  </ItemGroup>
-
-  <ItemGroup Condition="Exists('$(LocalRgfClientUiProject)')">
-    <ProjectReference Include="$(LocalRgfClientUiProject)" />
-  </ItemGroup>
-
-  <ItemGroup Condition="!Exists('$(LocalRgfClientUiProject)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.UI" Version="10.2.0" />
+    <ProjectReference Include="..\RGFDemo.Shared\RGFDemo.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('$(LocalRgfSessionAuth)')">
@@ -29,6 +21,14 @@
 
   <ItemGroup Condition="!Exists('$(LocalRgfSessionAuth)')">
     <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.SessionAuth" Version="10.2.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('$(LocalRgfClientUiProject)')">
+    <ProjectReference Include="$(LocalRgfClientUiProject)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfClientUiProject)')">
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.UI" Version="10.2.0" />
   </ItemGroup>
 
 </Project>

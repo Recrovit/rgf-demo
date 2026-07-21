@@ -2,7 +2,7 @@
 using Recrovit.RecroGridFramework.Core;
 using RGF.Demo.Northwind.Models;
 
-namespace RGF.Demo.Northwind.Entities
+namespace RGFDemo.Database.Entities
 {
     public partial class RG_Employee : RgfCore<Employees>
     {

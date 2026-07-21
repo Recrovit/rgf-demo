@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RGF.Demo.MVC.Models;
+using RGFDemo.MVC.Models;
 using System.Diagnostics;
 
-namespace RGF.Demo.MVC.Controllers
+namespace RGFDemo.MVC.Controllers
 {
     public class HomeController : Controller
     {

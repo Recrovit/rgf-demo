@@ -1,10 +1,10 @@
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration;
 using Recrovit.RecroGridFramework.Client.Blazor.SessionAuth.Proxy;
 using Recrovit.RecroGridFramework.Client.Services;
-using RGF.DemoApp.Client.Services;
+using RGFDemo.BlazorApp.Client.Services;
 using System.Security.Claims;
 
-namespace RGF.DemoApp.Features.UserInfo;
+namespace RGFDemo.BlazorApp.Features.UserInfo;
 
 public static class UserInfoEndpoints
 {

@@ -5,7 +5,7 @@ using Recrovit.RecroGridFramework.Extensions;
 using Recrovit.RecroGridFramework.Security;
 using RGF.Demo.Northwind.Models;
 
-namespace RGF.Demo.Northwind.Entities;
+namespace RGFDemo.Database.Entities;
 
 public partial class RG_Product : RgfCore<Products>
 {

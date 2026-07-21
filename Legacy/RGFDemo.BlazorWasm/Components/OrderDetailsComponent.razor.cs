@@ -5,10 +5,10 @@ using Recrovit.RecroGridFramework.Abstraction.Models;
 using Recrovit.RecroGridFramework.Client.Blazor.Components;
 using Recrovit.RecroGridFramework.Client.Blazor.Parameters;
 using Recrovit.RecroGridFramework.Client.Events;
-using RGF.Demo.Northwind.Common.Validation;
+using ScDemo.Northwind.Validation;
 using System.Globalization;
 
-namespace RGF.Demo.BlazorWasm.Components;
+namespace RGFDemo.BlazorWasm.Components;
 
 public partial class OrderDetailsComponent : ComponentBase, IDisposable, IAsyncDisposable
 {

@@ -1,4 +1,4 @@
-namespace RGF.DemoApp.Client.Models;
+namespace RGFDemo.BlazorApp.Client.Models;
 
 public sealed class UserInfoDto
 {

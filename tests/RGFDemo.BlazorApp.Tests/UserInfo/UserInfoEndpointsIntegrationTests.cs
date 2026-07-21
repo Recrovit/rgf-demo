@@ -8,12 +8,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication;
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration;
-using RGF.DemoApp.Client.Models;
-using RGF.DemoApp.Features.UserInfo;
-using RGF.DemoApp.Tests.Testing;
+using RGFDemo.BlazorApp.Client.Models;
+using RGFDemo.BlazorApp.Tests.Testing;
+using RGFDemo.BlazorApp.Features.UserInfo;
 using Xunit;
 
-namespace RGF.DemoApp.Tests.UserInfo;
+namespace RGFDemo.BlazorApp.Tests.UserInfo;
 
 public sealed class UserInfoEndpointsIntegrationTests
 {

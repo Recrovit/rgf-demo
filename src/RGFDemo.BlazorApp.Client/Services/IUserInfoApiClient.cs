@@ -1,6 +1,6 @@
-using RGF.DemoApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Models;
 
-namespace RGF.DemoApp.Client.Services;
+namespace RGFDemo.BlazorApp.Client.Services;
 
 public interface IUserInfoApiClient
 {

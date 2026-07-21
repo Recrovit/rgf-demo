@@ -3,10 +3,8 @@ using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using Recrovit.RecroGridFramework.Data;
 using RGF.Demo.Northwind.Models;
-using System;
-using System.Linq;
 
-namespace RGF.Demo.Northwind;
+namespace RGFDemo.Database;
 
 public class NorthwindDbContext : DbContext
 {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RGF.Demo.Northwind.Data.Migrations.PostgreSQL
+namespace RGFDemo.Database.Data.Migrations.PostgreSQL
 {
     /// <inheritdoc />
     public partial class RGFDemoNorthwind_v11 : Migration

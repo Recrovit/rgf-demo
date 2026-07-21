@@ -1,10 +1,10 @@
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication;
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration;
-using RGF.DemoApp.Client.Models;
+using RGFDemo.BlazorApp.Client.Models;
 using System.Text.Json;
 using System.Security.Claims;
 
-namespace RGF.DemoApp.Features.UserInfo;
+namespace RGFDemo.BlazorApp.Features.UserInfo;
 
 public sealed class UserInfoDownstreamClient(
     HttpClient httpClient,
