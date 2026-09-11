@@ -4,7 +4,11 @@
     <RootNamespace></RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="Exists('$(LocalRgfAbstractionProject)')">
+    <ProjectReference Include="$(LocalRgfAbstractionProject)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(LocalRgfAbstractionProject)')">
     <PackageReference Include="Recrovit.RecroGridFramework.Abstraction" Version="10.3.0" />
   </ItemGroup>
 
