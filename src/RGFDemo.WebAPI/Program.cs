@@ -12,7 +12,7 @@ try
     // NLog: Setup NLog for Dependency injection
     builder.Logging.ClearProviders();
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
-    builder.Host.UseNLog();
+    builder.Host.UseNLog(new NLogAspNetCoreOptions { IncludeScopes = true });
 
     // Add services to the container.
     //builder.Services.AddControllers();
@@ -31,6 +31,12 @@ try
     }
 
     app.UseHttpsRedirection();
+
+    if (LiveTestShutdown.IsEnabled(app.Environment.IsDevelopment(),
+        Environment.GetEnvironmentVariable("RGF_RECROBY_LIVE_HOST_ID"), Console.IsInputRedirected))
+    {
+        _ = Task.Run(() => LiveTestShutdown.ListenAsync(Console.In, app.Lifetime));
+    }
 
     await app.UseRgfAsync();
 
