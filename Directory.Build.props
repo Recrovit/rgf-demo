@@ -13,12 +13,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <LocalRgfCore>$(MSBuildThisFileDirectory)..\rgf-core\src\RGF.Core.csproj</LocalRgfCore>
     <LocalRgfClient>$(MSBuildThisFileDirectory)..\rgf-client\src\</LocalRgfClient>
     <LocalRgfAbstractionProject>$(LocalRgfClient)RGF.Abstraction\RGF.Abstraction.csproj</LocalRgfAbstractionProject>
     <LocalRgfClientUiProject>$(LocalRgfClient)RGF.Client.Blazor.UI\RGF.Client.Blazor.UI.csproj</LocalRgfClientUiProject>
     <LocalRgfHostProject>$(LocalRgfClient)RGF.Client.Blazor.Host.OpenIdConnect\RGF.Client.Blazor.Host.OpenIdConnect.csproj</LocalRgfHostProject>
     <LocalRgfSessionAuth>$(LocalRgfClient)RGF.Client.Blazor.SessionAuth\RGF.Client.Blazor.SessionAuth.csproj</LocalRgfSessionAuth>
-    <LocalRgfCore>$(MSBuildThisFileDirectory)..\rgf-core\src\RGF.Core.csproj</LocalRgfCore>
   </PropertyGroup>
 
   <!-- Common Project Metadata -->
