@@ -11,10 +11,24 @@ public static class ProgramRgf
     {
         if (builder.Environment.IsDevelopment())
         {
-            var provider = builder.Configuration["JwtBearerOptions:Provider"];
-            if (provider != "Duende" && !string.IsNullOrWhiteSpace(provider))
+            var liveHost = Environment.GetEnvironmentVariable("RGF_RECROBY_LIVE_HOST_ID") is { Length: > 0 };
+            var provider = liveHost ? "Duende" : builder.Configuration["JwtBearerOptions:Provider"];
+            if (!string.IsNullOrWhiteSpace(provider))
             {
                 builder.Configuration.AddUserSecrets(provider, reloadOnChange: true);
+            }
+            if (liveHost)
+            {
+                // A teszt saját folyamatában a titkok betöltése után is rögzített beállítások szükségesek.
+                builder.Configuration.AddInMemoryCollection(new Dictionary<string, string?>
+                {
+                    ["JwtBearerOptions:Provider"] = "Duende",
+                    ["Recrovit:AI:Diagnostics:Normalized:Enabled"] = "true",
+                    ["Recrovit:AI:Diagnostics:Normalized:IncludeContent"] = "true",
+                    ["Recrovit:AI:Diagnostics:StructuredOutput:IncludeContent"] = "true",
+                    ["Recrovit:AI:Diagnostics:RawHttp:Enabled"] = "false"
+                });
+                provider = "Duende";
             }
             Console.WriteLine("Authority: {0}", builder.Configuration[$"JwtBearerOptions:{provider}:Authority"]);
         }
@@ -57,6 +71,27 @@ public static class ProgramRgf
 
     public static async Task UseRgfAsync(this IApplicationBuilder app, bool enableRgfClient = true)
     {
+        if (app.ApplicationServices.GetRequiredService<IHostEnvironment>().IsDevelopment()
+            && Environment.GetEnvironmentVariable("RGF_RECROBY_LIVE_HOST_ID") is { Length: > 0 } hostId)
+        {
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path == "/api/rgf/capabilities")
+                {
+                    context.Response.Headers["X-RGF-Live-Host"] = hostId;
+                    context.Response.Headers["X-RGF-Live-Provider"] = app.ApplicationServices
+                        .GetRequiredService<IConfiguration>()["JwtBearerOptions:Provider"];
+                }
+                await next(context);
+            });
+            // A szülőfolyamat lezárt bemenete is megszünteti a teszt által indított példányt.
+            var lifetime = app.ApplicationServices.GetRequiredService<IHostApplicationLifetime>();
+            _ = Task.Run(async () =>
+            {
+                await Console.In.ReadLineAsync();
+                lifetime.StopApplication();
+            });
+        }
         app.UseStaticFiles();
         app.UseRouting();
 

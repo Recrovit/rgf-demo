@@ -12,7 +12,7 @@ try
     // NLog: Setup NLog for Dependency injection
     builder.Logging.ClearProviders();
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
-    builder.Host.UseNLog();
+    builder.Host.UseNLog(new NLogAspNetCoreOptions { IncludeScopes = true });
 
     // Add services to the container.
     //builder.Services.AddControllers();
