@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RGFDemo.Database\RGFDemo.Database.csproj" />
+    <ProjectReference Include="..\..\..\rgf-recroby\src\RGF.Recroby.csproj" />
   </ItemGroup>
 
   <ItemGroup>
