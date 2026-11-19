@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Recrovit.AspNetCore.Components.Routing.Configuration;
 using Recrovit.RecroGridFramework.Client.Blazor;
 using Recrovit.RecroGridFramework.Client.Blazor.SessionAuth;
 using Recrovit.RecroGridFramework.Client.Blazor.UI;
 using RGFDemo.BlazorApp.Client.Components;
+using RGFDemo.BlazorApp.Client.Layout;
 using RGFDemo.BlazorApp.Client.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -14,7 +14,7 @@ builder.Services.AddRgfBlazorSessionAuthClientServices(builder.Configuration, bu
 builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<IUserInfoApiClient, UserInfoApiClient>();
 
-builder.Services.AddRecrovitComponentRouting(options =>
+builder.Services.AddRecrovitComponentRouting(typeof(RgfLayout), options =>
 {
     options.AddRouteAssembly(typeof(Program).Assembly);
 });

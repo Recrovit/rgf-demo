@@ -1,43 +1,55 @@
-﻿@inherits LayoutComponentBase
+﻿<AuthorizeView>
+    <Authorized>
+        <RgfRootComponent>
+            <header class="rgf-page-header">
+                <div class="rgf-navbar-host">
+                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                                     NavbarBreakpoint="lg"
+                                     BrandText="RGF Demo App"
+                                     ShowThemeSelector="true"
+                                     ShowLanguageSelector="true">
+                        <NavbarRightContent>
+                            <div class="login-display">
+                                <LoginDisplay />
+                            </div>
+                        </NavbarRightContent>
+                    </NavbarComponent>
+                </div>
+            </header>
 
-<RgfRootComponent @key="_contentKey">
-    <header class="rgf-page-header">
-        <div class="rgf-navbar-host">
-            <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
-                             NavbarBreakpoint="lg"
-                             BrandText="RGF Demo App"
-                             ShowThemeSelector="true"
-                             ShowLanguageSelector="true">
-                <NavbarRightContent>
-                    <div class="login-display">
-                        <LoginDisplay />
-                    </div>
-                </NavbarRightContent>
-            </NavbarComponent>
-        </div>
-    </header>
+            <main class="rgf-page-main">
+                @Body
+            </main>
+        </RgfRootComponent>
+    </Authorized>
+    <NotAuthorized>
+        <main class="rgf-page-main">
+            <p>Log in to access RGF.</p>
+            <LoginDisplay />
+        </main>
+    </NotAuthorized>
+</AuthorizeView>
 
-    <main class="rgf-page-main">
-        @Body
-    </main>
-</RgfRootComponent>
-
+@inherits LayoutComponentBase
+@implements IDisposable
 @inject IRecroSecService _recroSec
+@inject IJSRuntime _jsRuntime
 @code {
-    private int _contentKey;
-
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
         _recroSec.LanguageChangedEvent.Subscribe(LanguageChangedAsync);
     }
 
-    private Task LanguageChangedAsync(DataEventArgs<string> _)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        return InvokeAsync(() =>
+        if (firstRender)
         {
-            _contentKey++;
-            StateHasChanged();
-        });
+            await _jsRuntime.InvokeVoidAsync(RgfBlazorConfiguration.JsBlazorNamespace + ".removeElementById", "rgf-boot-loader");
+        }
     }
+
+    private Task LanguageChangedAsync(DataEventArgs<string> _) => InvokeAsync(StateHasChanged);
+
+    public void Dispose() => _recroSec.LanguageChangedEvent.Unsubscribe(LanguageChangedAsync);
 }

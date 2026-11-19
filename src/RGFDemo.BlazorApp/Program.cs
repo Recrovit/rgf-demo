@@ -3,10 +3,10 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using NLog;
 using NLog.Web;
 using Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration;
-using Recrovit.AspNetCore.Components.Routing.Configuration;
 using Recrovit.AspNetCore.Components.Routing.Models;
 using Recrovit.RecroGridFramework.Client.Blazor;
 using Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect.Configuration;
+using Recrovit.RecroGridFramework.Client.Blazor.SessionAuth;
 using Recrovit.RecroGridFramework.Client.Blazor.UI;
 using RGFDemo.BlazorApp.Client.Layout;
 using RGFDemo.BlazorApp.Components;
@@ -34,7 +34,7 @@ try
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
     builder.Host.UseNLog();
 
-    builder.Services.AddRecrovitComponentRouting(options =>
+    builder.Services.AddRecrovitComponentRouting(typeof(RgfLayout), options =>
     {
         options.AddRouteAssembly(typeof(App).Assembly);
         options.AddRouteAssembly(typeof(RGFDemo.BlazorApp.Client._Imports).Assembly);
@@ -91,7 +91,9 @@ try
     await app.Services.InitializeRgfBlazorServerAsync();
     await app.Services.InitializeRgfUIAsync(loadResources: false);
 
-    app.MapRgfBlazorServerProxyOpenIdConnectComponents<App>(typeof(RGFDemo.BlazorApp.Client._Imports).Assembly);
+    app.MapRgfBlazorServerProxyOpenIdConnectComponents<App>(
+        authorizeRgfEntityPage: true,
+        additionalAssemblies: [typeof(RGFDemo.BlazorApp.Client._Imports).Assembly]);
 
     app.MapUserInfoEndpoints();
 
