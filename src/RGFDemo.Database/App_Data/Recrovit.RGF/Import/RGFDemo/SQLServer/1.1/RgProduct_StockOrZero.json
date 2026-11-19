@@ -1,0 +1,39 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10009,
+      "EntityName": "RgProduct",
+      "EntityVersion": "1",
+      "TypeDefinition": "RecroGridComponents.ScDemo.Northwind.RgProduct, EntryAssemblyName",
+      "Category": 2,
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 10158,
+          "EntityId": 10009,
+          "ColName": "UnitsInStock",
+          "Alias": "StockOrZero",
+          "ColTitle": "Stock (null as zero)",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 1,
+          "Readable": true,
+          "Editable": false,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormGroup": 0,
+          "FormPos": 0,
+          "PropertyComment": "Stock quantity, treating missing values as zero for filtering.",
+          "RecroGrid_Options": [
+            {
+              "EntityId": 10009,
+              "PropertyId": 10158,
+              "OptionKey": "RGO_FilterExpression",
+              "OptionValue": "COALESCE({0}.UnitsInStock, 0) {1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

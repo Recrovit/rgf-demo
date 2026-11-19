@@ -28,6 +28,9 @@ GO
 RgfCmd.Import.Update RgOrderDetail_ex.json
 GO
 
+RgfCmd.Import.Update RgProduct_StockOrZero.json
+GO
+
 RgfCmd.Import.Update RGFDemo/1.1/1997.Sales.Overview.Dashboard.json
 GO
 
