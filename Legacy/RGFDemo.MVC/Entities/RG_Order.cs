@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Recrovit.RecroGridFramework;
 using Recrovit.RecroGridFramework.Abstraction.Models;
-using Recrovit.RecroGridFramework.Core;
 using Recrovit.RecroGridFramework.Data;
 using Recrovit.RecroGridFramework.Extensions;
 using RGFDemo.Database;
@@ -9,7 +8,7 @@ using ScDemo.Northwind.Models;
 
 namespace RGF.Demo.Northwind.Entities;
 
-public partial class RG_Order : RgfCore<Order>
+public partial class RG_Order : RgBase<Order>
 {
     public RG_Order(IRecroGridContext rgContext) : base(rgContext) { }
 

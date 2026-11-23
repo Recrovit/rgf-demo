@@ -1,13 +1,12 @@
 ﻿using Recrovit.RecroGridFramework;
 using Recrovit.RecroGridFramework.Abstraction.Models;
-using Recrovit.RecroGridFramework.Core;
 using Recrovit.RecroGridFramework.Data;
 using ScDemo.Northwind.Models;
 using ScDemo.Northwind.OrderDetail;
 
 namespace RGF.Demo.Northwind.Entities;
 
-public partial class RG_OrderDetails : RgfCore<OrderDetail>
+public partial class RG_OrderDetails : RgBase<OrderDetail>
 {
     public RG_OrderDetails(IRecroGridContext rgContext) : base(rgContext) { }
 

@@ -1,5 +1,4 @@
 ﻿using Recrovit.RecroGridFramework;
-using Recrovit.RecroGridFramework.Core;
 using ScDemo.Northwind.Models;
 using System.ComponentModel.DataAnnotations;
 
@@ -17,7 +16,7 @@ public enum DropdownEnumTest
     EItem3 = 3,
 }
 
-public partial class RG_Category : RgfCore<Category>
+public partial class RG_Category : RgBase<Category>
 {
     public RG_Category(IRecroGridContext rgContext) : base(rgContext) { }
 
