@@ -1,31 +1,32 @@
 {
-  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Menu, Recrovit.RecroGrid",
+  "TypeDef": "Recrovit.RecroGridFramework.Services.RgfMenuExport, Recrovit.RecroGrid",
   "Data": [
     {
-      "MenuId": 10001,
+      "MenuKey": "app-root",
+      "ParentMenuKey": "rgf-root",
       "MenuType": 3,
       "Title": "RGFDemo",
       "MenuPos": 1,
       "AlwayVisible": true
     },
     {
-      "MenuId": 10002,
+      "MenuKey": "app-root/dashboard",
+      "ParentMenuKey": "app-root",
       "MenuType": 6,
-      "ParentId": 10001,
       "Title": "Dashboard",
       "Command": "/rgf/dashboard",
       "MenuPos": 1,
       "AlwayVisible": true
     },
     {
-      "MenuId": 10003,
+      "MenuKey": "app-root/rgf-admin",
+      "ParentMenuKey": "app-root",
+      "LinkedMenuKey": "rgf-root/rgf-admin",
       "MenuType": 3,
-      "ParentId": 10001,
       "Title": "-linked-",
       "Command": "",
       "MenuPos": 101,
-      "AlwayVisible": false,
-      "LinkedId": 100
+      "AlwayVisible": false
     }
   ]
 }

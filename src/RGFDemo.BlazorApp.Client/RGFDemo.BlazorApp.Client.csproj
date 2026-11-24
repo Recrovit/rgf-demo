@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('$(LocalRgfSessionAuth)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.SessionAuth" Version="10.3.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.SessionAuth" Version="10.4.0" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('$(LocalRgfClientUiProject)')">
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('$(LocalRgfClientUiProject)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.UI" Version="10.3.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.UI" Version="10.4.0" />
   </ItemGroup>
   
 </Project>

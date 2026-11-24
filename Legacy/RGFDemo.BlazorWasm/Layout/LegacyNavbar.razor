@@ -1,0 +1,29 @@
+@using Recrovit.RecroGridFramework.Abstraction.Contracts.Services
+@using Recrovit.RecroGridFramework.Abstraction.Contracts.Constants
+@inject IRgfMenuService MenuService
+@inject IRecroSecService RecroSec
+
+@if (_menuParameters.MenuItems != null)
+{
+    <DynamicComponent Type="MenuComponentType" Parameters="@(new Dictionary<string, object> {
+        ["MenuParameters"] = _menuParameters
+    })" />
+}
+
+@code {
+    [Parameter, EditorRequired]
+    public Type MenuComponentType { get; set; } = null!;
+
+#pragma warning disable CS0612 // A régi UI-csomagok ezt a kapcsolót használják a felső menü megjelenítéséhez.
+    private readonly RgfMenuParameters _menuParameters = new() { Navbar = true };
+#pragma warning restore CS0612
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await MenuService.GetMenuAsync(Menu.AppRoot, RecroSec.UserLanguage);
+        if (response.Success)
+        {
+            _menuParameters.MenuItems = response.Result;
+        }
+    }
+}

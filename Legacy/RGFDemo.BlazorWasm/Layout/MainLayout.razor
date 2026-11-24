@@ -1,3 +1,4 @@
+@using Recrovit.RecroGridFramework.Abstraction.Contracts.Constants
 ﻿@using Recrovit.RecroGridFramework.Client.Blazor.UI.Components
 @inherits LayoutComponentBase
 
@@ -8,7 +9,7 @@
             @if (_currentLibrary == "Bootstrap")
             {
                 <AuthorizeView>
-                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuKey = Menu.AppRoot })"
                                      NavbarBreakpoint="lg"
                                      BrandText="RGF Demo App"
                                      ShowThemeSelector="true"

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('$(LocalRgfHostProject)')">
-    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect" Version="10.3.0" />
+    <PackageReference Include="Recrovit.RecroGridFramework.Client.Blazor.Host.OpenIdConnect" Version="10.4.0" />
   </ItemGroup>
 
   <ItemGroup>

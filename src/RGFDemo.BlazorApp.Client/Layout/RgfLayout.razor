@@ -1,9 +1,10 @@
+@using Recrovit.RecroGridFramework.Abstraction.Contracts.Constants
 ﻿<AuthorizeView>
     <Authorized>
         <RgfRootComponent>
             <header class="rgf-page-header">
                 <div class="rgf-navbar-host">
-                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuId = 10001 })"
+                    <NavbarComponent MenuParameters="@(new RgfMenuParameters() { MenuKey = Menu.AppRoot })"
                                      NavbarBreakpoint="lg"
                                      BrandText="RGF Demo App"
                                      ShowThemeSelector="true"

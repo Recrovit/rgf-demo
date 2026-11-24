@@ -6,7 +6,6 @@ using Recrovit.RecroGridFramework.Client.Blazor;
 #if DevExpressEnabled
 using Recrovit.RecroGridFramework.Client.Blazor.DevExpressUI;
 #endif
-using Recrovit.RecroGridFramework.Client.Blazor.Parameters;
 using Recrovit.RecroGridFramework.Client.Blazor.RadzenUI;
 using Recrovit.RecroGridFramework.Client.Blazor.SyncfusionUI;
 #if TelerikEnabled
@@ -161,8 +160,8 @@ public partial class MainLayout
     {
         _menu = (builder) =>
         {
-            builder.OpenComponent(0, menu);
-            builder.AddAttribute(1, "MenuParameters", new RgfMenuParameters() { MenuId = 10001, Navbar = true });
+            builder.OpenComponent<LegacyNavbar>(0);
+            builder.AddAttribute(1, nameof(LegacyNavbar.MenuComponentType), menu);
             builder.CloseComponent();
         };
         _themes = themes == null ? null : (builder) =>
