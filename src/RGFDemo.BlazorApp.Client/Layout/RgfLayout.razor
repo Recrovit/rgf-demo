@@ -32,16 +32,8 @@
 </AuthorizeView>
 
 @inherits LayoutComponentBase
-@implements IDisposable
-@inject IRecroSecService _recroSec
 @inject IJSRuntime _jsRuntime
 @code {
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-        _recroSec.LanguageChangedEvent.Subscribe(LanguageChangedAsync);
-    }
-
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -49,8 +41,4 @@
             await _jsRuntime.InvokeVoidAsync(RgfBlazorConfiguration.JsBlazorNamespace + ".removeElementById", "rgf-boot-loader");
         }
     }
-
-    private Task LanguageChangedAsync(DataEventArgs<string> _) => InvokeAsync(StateHasChanged);
-
-    public void Dispose() => _recroSec.LanguageChangedEvent.Unsubscribe(LanguageChangedAsync);
 }

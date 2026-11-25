@@ -67,10 +67,15 @@ public partial class MainLayout
     {
         return InvokeAsync(() =>
         {
-            _contentKey++;
-            StateHasChanged();
+            if (_currentLibrary != "Bootstrap")
+            {
+                _contentKey++;
+                StateHasChanged();
+            }
         });
     }
+
+    public void Dispose() => _recroSec.LanguageChangedEvent.Unsubscribe(LanguageChangedAsync);
 
     private void OnLibrarySelectionChanged(ChangeEventArgs args)
     {
